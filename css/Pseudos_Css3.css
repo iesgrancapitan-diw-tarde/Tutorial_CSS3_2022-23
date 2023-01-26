@@ -1,0 +1,9 @@
+button.prueba_active:active {
+    color: red;
+    background-color: black;
+}
+
+a.prueba_active2:active {
+    background-color: yellow;
+    text-decoration: none;
+}
