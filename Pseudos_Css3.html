@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>TUTORIAL CSS3 - 2021/2022 - Diseño de Interfaces Web - CFGS DAW - IES Gran Capitán</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/prism.css">
+    <link rel="stylesheet" href="css/Pseudos_Css3.css">
+    <script src="js/prism.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1><a href="index.html">TUTORIAL CSS3 - 2020/2021</a></h1>
+        <h2><img src="icon/language-css3.svg"></h2>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="Bordes.html">Bordes</a></li>
+            <li><a href="Fondos.html">Fondos</a></li>
+            <li><a href="Efectos_texto.html">Fuentes y Ef Texto</a></li>
+            <li><a href="Transformaciones.html">Transformac.</a></li>
+            <li><a href="Transiciones.html">Transiciones</a></li>
+            <li><a href="Animaciones.html">Animaciones</a></li>
+            <li><a href="Col_mult.html">Col Múltiples</a></li>
+            <li><a href="Color.html">Color y Degradado</a></li>
+            <li><a href="Pseudos_Css3.html">Pseudos CSS3</a></li>
+            <li><a href="Svg_filter.html">Filter y SVG</a></li>
+
+        </ul>
+    </nav>
+    <main>
+        <div>
+            <h2>TUTORIAL CSS3 - Pseudoclases</h2>
+            <h3>Subtitulo</h3>
+        </div>
+
+        <section>
+            <article>
+                <h3>:active</h3>
+                <p>
+                    La pseudoclase <span>:active</span> representa a un elemento que el usurio está activando.
+                    Generalmente, la activación se efectúa cuando el usuario
+                    pincha sobre el elemento con el botón izquierdo del ratón. Aunque válido para cualquier elemento, su
+                    uso se
+                    destina normalmente a enlaces y botones.
+                </p>
+                <h4>Sintaxis</h4>
+                <pre class="line-numbers"><code class="language-css">elemento:active {
+        /* Definición de estilos */
+    }</code></pre>
+                <p>Los estilos definidos por <span>:active</span> pueden ser anulados por las posteriores definiciones
+                    de <span>:link</span>,
+                    <span>:hover</span> o <span>:visited</span>. Es una buena práctica colocar <span>:active</span>
+                    después de todas las definiciones
+                    de estilo de los enlaces.
+                </p>
+
+                <h4>Ejemplos:</h4>
+                <pre class="line-numbers"><code class="language-css">button:active {
+        color: red;
+        background-color: black;
+    
+    a:active {
+        background-color: yellow;
+        text-decoration: none;
+    }</code></pre>
+                <button class="prueba_active">Al pinchar en el botón, pasará a tener texto rojo sobre fondo
+                    negro</button>
+                <a href="#prueba" class="prueba_active2">Al pinchar en el enlace, se pondrá sobre fondo amarillo y no
+                    tendrá subrayado</a>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <div>David López Moreno</div>
+        <a href="" class="social"><img src="icon/twitter.svg" alt="Twitter"></a>
+        <a href="https://github.com/dlopezmfp" class="social"><img src="icon/github.svg" alt="GitHub"></a>
+    </footer>
+</body>
+
+</html>
