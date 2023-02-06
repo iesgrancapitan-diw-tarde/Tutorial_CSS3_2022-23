@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>TUTORIAL CSS3 - 2021/2022 - Diseño de Interfaces Web - CFGS DAW - IES Gran Capitán</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -15,6 +16,7 @@
     <link rel="stylesheet" href="css/Fuentes-Efectos_texto.css">
     <script src="js/prism.js"></script>
 </head>
+
 <body>
     <header>
         <h1><a href="index.html">TUTORIAL CSS3 - 2020/2021</a></h1>
@@ -24,7 +26,7 @@
         <ul>
             <li><a href="Bordes.html">Bordes</a></li>
             <li><a href="Fondos.html">Fondos</a></li>
-            <li><a href="Fuentes-Efectos_texto.html">Fuentes y Ef Texto</a></li>   
+            <li><a href="Fuentes-Efectos_texto.html">Fuentes y Ef Texto</a></li>
             <li><a href="Transformaciones.html">Transformac.</a></li>
             <li><a href="Transiciones.html">Transiciones</a></li>
             <li><a href="Animaciones.html">Animaciones</a></li>
@@ -36,7 +38,39 @@
         </ul>
     </nav>
     <main>
-
+        <div>
+            <h2>TUTORIAL CSS3 - Fuentes y Efectos de Texto</h2>
+            <h3>Propiedades para modificar las fuentes y el texto de un documento HTML</h3>
+        </div>
+        <section>
+            <article>
+                <h3>color</h3>
+                <p>Establece el color del contenido de los elementos seleccionados.</p>
+                <h4>Sintaxis</h4>
+                <pre
+                    class="line-numbers"><code class="language-css">color: [Aqui va la sintaxis de cada propiedad];</code></pre>
+                <p>El color se puede escoger de distintas maneras: </p>
+                <ul>
+                    <li>rgb()</li>
+                    <li>rgba()</li>
+                    <li>hsl()</li>
+                    <li>hsla()</li>
+                    <li>Valores hexadecimales</li>
+                    <li>Variables por defecto</li>
+                </ul>
+                <h4>Ejemplos:</h4>
+                <pre class="line-numbers"><code class="language-css">p {
+color: rgb(255, 0, 0);
+color: rgba(255, 0, 0, 0.5);
+color: hsl(0, 100%, 50%);
+color: hsla(0, 100%, 50%, 0.5);
+color: #ff0000;
+color: red;
+}</code>
+                </pre>
+                <p>Las formas de rgba y hsla admiten el valor alpha, que indica la transparencia del color. El valor alpha puede ser un número entre 0 y 1, o un porcentaje entre 0% y 100%.</p>
+            </article>
+        </section>
     </main>
     <footer>
         <div>David López Moreno</div>
@@ -44,4 +78,5 @@
         <a href="https://github.com/dlopezmfp" class="social"><img src="icon/github.svg" alt="GitHub"></a>
     </footer>
 </body>
+
 </html>
