@@ -1,4 +1,31 @@
 /* Creado por Francisco José Gómez Ruiz y Andrés Castillero Moriana */
+
+
 .bordes_color {
     border-color: #000000;
+}
+
+/* Engloba todo el ejemplo */
+.bordes_radius{
+    display: flex;
+    justify-content: left;
+}
+
+/* Primer ejemplo */
+.bordes_radiusEjemplo1{
+	width: 300px;
+	height: 50px;
+	background-color: yellow;
+	border:10px solid red;
+	border-radius: 20px 5px 5px 20px;
+    margin:10px;
+}
+
+.bordes_radiusEjemplo2{
+    width: 300px;
+	height: 50px;
+	background-color: yellow;
+	border:10px solid red;
+	border-radius: 2em/5em;
+    margin:10px;
 }

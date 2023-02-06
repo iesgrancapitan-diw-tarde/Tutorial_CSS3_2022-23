@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/bordes.css">
     <link rel="stylesheet" href="css/estilos.css">
     <link rel="stylesheet" href="css/prism.css">
     <script src="js/prism.js"></script>
@@ -45,41 +46,27 @@
         <section>
             <article>
                 <h3>border-radius</h3>
-                <p>Indica que el tamaño del borde redondeado. Es importante definir un border-style para que el borde
-                    se vea redondeado.</p>
+                <p>Indica que el tamaño del borde redondeado.</p>
                 <h4>Sintaxis</h4>
                 <pre
-                    class="line-numbers"><code class="language-css">border-radius: [Aqui va la sintaxis de cada propiedad];</code></pre>
+                    class="line-numbers"><code class="language-css">
+border-radius: 1-4 length|% / 1-4 length|%|initial|inherit;</code></pre>
                 <p>Admite de uno a cuatro valores, que son los siguientes: </p>
                 <ul>
-                    <li>Un valor: se aplica a los cuatros lados.</li>
-                    <li>Dos valores. se aplica el primero a arriba y abajo y el segundo a derecha e
-                        izquierda.</li>
-                    <li>Tres valores: se aplica el <span>primero</span> a arriba,el segundo a derecha e izquierda y el
-                        tercero a abajo.</li>
-                    <li>Cuatro valores: se aplica el primero a arriba, el segundo a la derecha, el tercero abajo y el
-                        cuarto
-                        a la izquierda.</li>
+                    <li>Un valor: Se aplica a los cuatros lados.</li>
+                    <li>Dos valores. Se aplica el primero a arriba y abajo y el segundo a derecha e izquierda.</li>
+                    <li>Tres valores: se aplica el <span>primero</span> a arriba,el segundo a derecha e izquierda y el tercero a abajo.</li>
+                    <li>Cuatro valores: se aplica el primero a arriba, el segundo a la derecha, el tercero abajo y el cuarto a la izquierda.</li>
                 </ul>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae velit laudantium adipisci esse
-                    voluptates deserunt eum ex, excepturi, amet, sequi praesentium fugiat fugit accusamus vel nostrum
-                    numquam neque repellat autem.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam quisquam repellat earum recusandae
-                    ad voluptates necessitatibus alias eaque unde expedita, iste, at quibusdam tenetur quis voluptatibus
-                    harum culpa a porro.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, ad porro optio vel beatae rem
-                    quidem quasi blanditiis sint numquam ullam, maxime neque impedit, nobis id? Maxime, commodi!
-                    Commodi, quam?</p>
-
                 <h4>Ejemplos:</h4>
                 <pre class="line-numbers"><code class="language-css">
-border-radius: 15px 10px 15px 10px;
-border-style: solid;
-border-width: 2px;
-border-color: black;</code></pre>
-                Aquí el resultado del ejemplo del código fuente indicado arriba. En el código fuente de los ejemplos no
-                debe haber ninguna propiedad no explicada anteriormente. Es decir, si para el ejemplo necesitas
-                border-style, border-width y/o border-color, estas propiedades deben ser explicadas con anterioridad
+border-radius: 20px 5px 20px 5px;
+border-radius: 2em/5em;</code></pre>
+                Aquí el resultado del ejemplo del código fuente indicado arriba.
+                <div class="bordes_radius">
+                    <div class="bordes_radiusEjemplo1"></div>
+                    <div class="bordes_radiusEjemplo2"></div>
+                </div>
             </article>
 
         </section>
