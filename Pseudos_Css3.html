@@ -47,16 +47,14 @@
             <article>
                 <h3>:active</h3>
                 <p>
-                    La pseudoclase <span>:active</span> representa a un elemento que el usurio está activando.
-                    Generalmente, la activación se efectúa cuando el usuario
-                    pincha sobre el elemento con el botón izquierdo del ratón. Aunque válido para cualquier elemento, su
-                    uso se
-                    destina normalmente a enlaces y botones.
+                    La pseudoclase <span>:active</span> representa a un elemento que el usuario ha activado,
+                    generalmente, haciendo clic sobre el elemento con el botón izquierdo del ratón. Se suele utilizar en
+                    botones y enlaces.
                 </p>
                 <h4>Sintaxis</h4>
                 <pre class="line-numbers"><code class="language-css">elemento:active {
-        /* Definición de estilos */
-    }</code></pre>
+    /* Definición de estilos */
+}</code></pre>
                 <p>Los estilos definidos por <span>:active</span> pueden ser anulados por las posteriores definiciones
                     de <span>:link</span>,
                     <span>:hover</span> o <span>:visited</span>. Es una buena práctica colocar <span>:active</span>
@@ -64,19 +62,78 @@
                     de estilo de los enlaces.
                 </p>
 
-                <h4>Ejemplos:</h4>
+                <h4>Ejemplo de uso</h4>
                 <pre class="line-numbers"><code class="language-css">button:active {
-        color: red;
-        background-color: black;
-    
-    a:active {
-        background-color: yellow;
-        text-decoration: none;
-    }</code></pre>
+    color: red;
+    background-color: black;
+}
+
+a:active {
+    background-color: yellow;
+    text-decoration: none;
+}</code></pre>
                 <button class="prueba_active">Al pinchar en el botón, pasará a tener texto rojo sobre fondo
                     negro</button>
                 <a href="#prueba" class="prueba_active2">Al pinchar en el enlace, se pondrá sobre fondo amarillo y no
                     tendrá subrayado</a>
+            </article>
+            <article>
+                <h3>:hover</h3>
+                <p>
+                    La pseudoclase <span>:hover</span> representa a un elemento sobre el que el usuario ha colocado el
+                    cursor (o del dedo en dispositivos táctiles).
+                </p>
+                <h4>Sintaxis</h4>
+                <pre class="line-numbers"><code class="language-css">elemento:hover {
+    /* Definición de estilos */
+}</code></pre>
+                <h4>Ejemplo de uso</h4>
+                <pre class="line-numbers"><code class="language-css">button:hover {
+    background-color: red;
+    color: white;
+}</code></pre>
+                <button class="prueba_hover">Al pasar el ratón por encima del botón, pasará a tener fondo rojo y
+                    texto blanco</button>
+            </article>
+            <article>
+                <h3>:valid</h3>
+                <p>
+                    La pseudoclase <span>:valid</span> representa a un elemento que contiene un valor válido. Se suele
+                    utilizar para validar formularios.
+                </p>
+                <h4>Sintaxis</h4>
+                <pre class="line-numbers"><code class="language-css">elemento:valid {
+    /* Definición de estilos */
+}</code></pre>
+                <h4>Ejemplo de uso</h4>
+                <pre class="line-numbers"><code class="language-css">input:valid {
+    background-color: green;
+    color: white;
+}</code></pre>
+                <p>
+                    Estos elementos <span>input</span> son de tipo <span>email</span>, por lo que solo serán válidos si
+                    el valor introducido es un email:
+                </p>
+                <input type="email" class="prueba_valid" value="mail@mail.com">
+                <input type="email" class="prueba_valid" value="texto">
+            </article>
+            <article>
+                <h3>::after</h3>
+                <p>
+                    La pseudoclase <span>:hover</span> representa a un elemento sobre el que el usuario ha colocado el
+                    cursor (o del dedo en dispositivos táctiles).
+                </p>
+                <h4>Sintaxis</h4>
+                <pre class="line-numbers"><code class="language-css">elemento:hover {
+    /* Definición de estilos */
+}</code></pre>
+                <h4>Ejemplo de uso</h4>
+                <pre class="line-numbers"><code class="language-css">button:hover {
+    background-color: red;
+    color: white;
+}</code></pre>
+                <button class="prueba_hover">Al pasar el ratón por encima del botón, pasará a tener fondo rojo y
+                    texto blanco</button>
             </article>
         </section>
     </main>
