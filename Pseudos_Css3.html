@@ -47,16 +47,14 @@
             <article>
                 <h3>:active</h3>
                 <p>
-                    La pseudoclase <span>:active</span> representa a un elemento que el usurio está activando.
-                    Generalmente, la activación se efectúa cuando el usuario
-                    pincha sobre el elemento con el botón izquierdo del ratón. Aunque válido para cualquier elemento, su
-                    uso se
-                    destina normalmente a enlaces y botones.
+                    La pseudoclase <span>:active</span> representa a un elemento que el usuario ha activado,
+                    generalmente, haciendo clic sobre el elemento con el botón izquierdo del ratón. Se suele utilizar en
+                    botones y enlaces.
                 </p>
                 <h4>Sintaxis</h4>
                 <pre class="line-numbers"><code class="language-css">elemento:active {
-        /* Definición de estilos */
-    }</code></pre>
+    /* Definición de estilos */
+}</code></pre>
                 <p>Los estilos definidos por <span>:active</span> pueden ser anulados por las posteriores definiciones
                     de <span>:link</span>,
                     <span>:hover</span> o <span>:visited</span>. Es una buena práctica colocar <span>:active</span>
@@ -66,13 +64,14 @@
 
                 <h4>Ejemplos:</h4>
                 <pre class="line-numbers"><code class="language-css">button:active {
-        color: red;
-        background-color: black;
-    
-    a:active {
-        background-color: yellow;
-        text-decoration: none;
-    }</code></pre>
+    color: red;
+    background-color: black;
+}
+
+a:active {
+    background-color: yellow;
+    text-decoration: none;
+}</code></pre>
                 <button class="prueba_active">Al pinchar en el botón, pasará a tener texto rojo sobre fondo
                     negro</button>
                 <a href="#prueba" class="prueba_active2">Al pinchar en el enlace, se pondrá sobre fondo amarillo y no
