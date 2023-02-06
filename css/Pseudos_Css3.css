@@ -7,3 +7,8 @@ a.prueba_active2:active {
     background-color: yellow;
     text-decoration: none;
 }
+
+button.prueba_hover:hover {
+    color: red;
+    background-color: white;
+}
