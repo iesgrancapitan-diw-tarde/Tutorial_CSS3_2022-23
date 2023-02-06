@@ -12,3 +12,8 @@ button.prueba_hover:hover {
     color: red;
     background-color: white;
 }
+
+input.prueba_valid:valid {
+    background-color: green;
+    color: white;
+}

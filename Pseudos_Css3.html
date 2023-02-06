@@ -95,6 +95,28 @@ a:active {
                 <button class="prueba_hover">Al pasar el ratón por encima del botón, pasará a tener fondo rojo y
                     texto blanco</button>
             </article>
+            <article>
+                <h3>:valid</h3>
+                <p>
+                    La pseudoclase <span>:valid</span> representa a un elemento que contiene un valor válido. Se suele
+                    utilizar para validar formularios.
+                </p>
+                <h4>Sintaxis</h4>
+                <pre class="line-numbers"><code class="language-css">elemento:valid {
+    /* Definición de estilos */
+}</code></pre>
+                <h4>Ejemplo de uso</h4>
+                <pre class="line-numbers"><code class="language-css">input:valid {
+    background-color: green;
+    color: white;
+}</code></pre>
+                <p>
+                    Estos elementos <span>input</span> son de tipo <span>email</span>, por lo que solo serán válidos si
+                    el valor introducido es un email:
+                </p>
+                <input type="email" class="prueba_valid" value="mail@mail.com">
+                <input type="email" class="prueba_valid" value="texto">
+            </article>
         </section>
     </main>
     <footer>
