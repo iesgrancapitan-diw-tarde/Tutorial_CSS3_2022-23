@@ -366,23 +366,23 @@ animation-duration: 2s</code></pre>
             <ul class="examples">
                 <li>Ejemplo 1:</li>
 
-                <pre class="line-numbers"><code class="language-css">.fillForwards:hover {
-  animation-name: scaleTiming;
-  animation-duration: 0.5s;
-  animation-fill-mode: forwards;
-
+                <pre class="line-numbers"><code class="language-css">.steps1:hover {
+  animation-name: steps;
+  animation-timing-function: steps(3, end);
+  animation-duration: 2s;
   animation-iteration-count: 4;
 }
 </code></pre>
 
                 <pre class="line-numbers"><code class="language-css">
-@keyframes scaleTiming {
-  0% {
-    transform: scale(1);
-  }
-  100% {
-    transform: scale(2);
-  }
+@keyframes steps {
+    0% {
+        width: 100px;
+    }
+    100% {
+        width: 500px;
+    }
+}
 </code></pre>
 
                 <pre class="resultsLarge"><code class="language-css"><div class="steps steps1"></div></code></pre>
@@ -393,22 +393,23 @@ animation-duration: 2s</code></pre>
 
                 <li>Ejemplo 2:</li>
 
-                <pre class="line-numbers"><code class="language-css">.fillBackwards:hover {
-  animation-name: scaleTiming;
-  animation-duration: 0.5s;
-  animation-fill-mode: backwards;
-  animation-iteration-count: 4;
+                <pre class="line-numbers"><code class="language-css">.bezier1:hover {
+    animation-name: steps;
+   animation-timing-function: ease;
+    animation-duration: 2s;
+    animation-iteration-count: 4;
 }
 </code></pre>
 
                 <pre class="line-numbers"><code class="language-css">
-@keyframes scaleTiming {
-  0% {
-    transform: scale(1);
-  }
-  100% {
-    transform: scale(2);
-  }
+@keyframes steps {
+    0% {
+        width: 100px;
+    }
+    100% {
+        width: 500px;
+    }
+}
 </code></pre>
 
                 <pre class="resultsLarge"><code class="language-css"><div class="bezier bezier1"></div></code></pre>
