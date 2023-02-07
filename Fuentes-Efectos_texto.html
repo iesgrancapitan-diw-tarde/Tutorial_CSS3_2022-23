@@ -189,6 +189,72 @@
                 </pre>
                 <p>El valor numerico 400 corresponde a font-weigth: normal; y el valor numerico 700 corresponde a font-weight: bold;</p>
             </article>
+            <article>
+                <h3>font-style</h3>
+                <p>Se usa para activar y desactivar el texto en cursiva.</p>
+                <h4>Sintaxis</h4>
+                <pre
+                    class="line-numbers"><code class="language-css">font-style: [Aqui va la sintaxis de cada propiedad];</code></pre>
+                <p>Los valores posibles son los siguientes: </p>
+                <ul>
+                    <li>normal - Pone el texto en tipo de letra normal <span>(desactiva la cursiva)</span>.</li>
+                    <li>italic - Pone el texto en la versión cursiva del tipo de letra, si está disponible; si no está disponible, simulará cursiva con el modo oblique en su lugar.</li>
+                    <li>oblique - Pone el texto en una versión de tipo de letra cursiva simulada, que se genera inclinando la versión normal.</li>
+                </ul>
+                <h4>Ejemplos:</h4>
+                <pre class="line-numbers"><code class="language-css">p {
+    font-style: normal;
+    font-style: italic;
+    font-style: oblique;
+}</code>
+                </pre>
+            </article>
+            <article>
+                <h3>text-transform</h3>
+                <p>Te permite practicar algunas transformaciones sobre tu tipo de letra.</p>
+                <h4>Sintaxis</h4>
+                <pre
+                    class="line-numbers"><code class="language-css">text-transform: [Aqui va la sintaxis de cada propiedad];</code></pre>
+                <p>Los valores incluyen: </p>
+                <ul>
+                    <li>none - Impide cualquier transformación.</li>
+                    <li>uppercase - Transforma TODO EL TEXTO A MAYÚSCULAS.</li>
+                    <li>lowercase - Transforma todo el texto a minúsculas.</li>
+                    <li>capitalize - Transforma Las Letras Iniciales De Cada Palabra A Mayúscula.</li>
+                    <li>full-width - Transforma todos los caracteres para cada uno quede dentro de una caja de ancho fijo, similar a una fuente monoespaciada, lo que permite, por ejemplo, la alineación de caracteres latinos junto con caracteres asiáticos (chino, japonés, coreano.)</li>
+                </ul>
+                <h4>Ejemplos:</h4>
+                <pre class="line-numbers"><code class="language-css">p {
+    text-transform: none;
+    text-transform: uppercase;
+    text-transform: lowercase;
+    text-transform: capitalize;
+    text-transform: full-width;
+}</code>
+                </pre>
+            </article>
+            <article>
+                <h3>text-decoration</h3>
+                <p>Activa/desactiva decoraciones en los tipos de letra (usarás esto principalmente para desactivar el subrayado por defecto de los enlaces al aplicarles estilo).</p>
+                <h4>Sintaxis</h4>
+                <pre
+                    class="line-numbers"><code class="language-css">text-decoration: [Aqui va la sintaxis de cada propiedad];</code></pre>
+                <p>Los valores incluyen: </p>
+                <ul>
+                    <li>none - Desactiva cualquier decoración de texto que presente.</li>
+                    <li>underline - Subraya el texto.</li>
+                    <li>overline - Proporciona al texto una línea superpuesta.</li>
+                    <li>line-through - Coloca un tachado sobre el texto.</li>
+                </ul>
+                <h4>Ejemplos:</h4>
+                <pre class="line-numbers"><code class="language-css">p {
+    text-decoration: none;
+    text-decoration: underline;
+    text-decoration: overline;
+    text-decoration: line-through;
+}</code>
+                </pre>
+            </article>
         </section>
     </main>
     <footer>
