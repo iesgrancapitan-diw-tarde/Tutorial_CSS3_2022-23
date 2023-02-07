@@ -17,3 +17,16 @@ input.prueba_valid:valid {
     background-color: green;
     color: white;
 }
+.prueba_after::after {
+    content: "♥";
+    color:red;
+}
+
+.prueba_before{
+    text-decoration: none;
+}
+
+.prueba_before::before{
+    content: "→ ";
+    color: red;
+}
