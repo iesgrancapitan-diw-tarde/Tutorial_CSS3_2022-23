@@ -60,15 +60,63 @@
                 </ul>
                 <h4>Ejemplos:</h4>
                 <pre class="line-numbers"><code class="language-css">p {
-color: rgb(255, 0, 0);
-color: rgba(255, 0, 0, 0.5);
-color: hsl(0, 100%, 50%);
-color: hsla(0, 100%, 50%, 0.5);
-color: #ff0000;
-color: red;
+    color: rgb(255, 0, 0);
+    color: rgba(255, 0, 0, 0.5);
+    color: hsl(0, 100%, 50%);
+    color: hsla(0, 100%, 50%, 0.5);
+    color: #ff0000;
+    color: red;
 }</code>
                 </pre>
                 <p>Las formas de rgba y hsla admiten el valor alpha, que indica la transparencia del color. El valor alpha puede ser un número entre 0 y 1, o un porcentaje entre 0% y 100%.</p>
+            </article>
+            <article>
+                <h3>font-family</h3>
+                <p> Esta propiedad indica al navegador el tipo de letra que debe aplicar a los elementos seleccionados. El navegador solo aplica el tipo de letra si la máquina que accede al sitio web dispone de ella; en caso contrario, simplemente usa el tipo de letra que tiene definido por defecto <span>(default font)</span>.</p>
+                <h4>Sintaxis</h4>
+                <pre
+                    class="line-numbers"><code class="language-css">font-family: [Aqui va la sintaxis de cada propiedad];</code></pre>
+                <p>Los tipos de letra seguros para la web: </p>
+                <ul>
+                    <li>Arial -> sans-serif</li>
+                    <li>Courier New -> monospace</li>
+                    <li>Georgia -> serif</li>
+                    <li>Times New Roman -> serif</li>
+                    <li>Trebuchet MS -> sans-serif</li>
+                    <li>Verdana -> sans-serif</li>
+                </ul>
+                <h4>Ejemplos:</h4>
+                <pre class="line-numbers"><code class="language-css">p {
+    font-family: Arial;
+}</code>
+                </pre>
+                <p>CSS define cinco nombres genéricos para los tipos de letra serif, sans-serif, monospace, cursive y fantasy.</p>
+                <table>
+                    <tr>
+                        <th>Nombre genérico</th>
+                        <th>Descripción</th>
+                    </tr>
+                    <tr>
+                        <td>serif</td>
+                        <td>El tipo de letra tiene serifa (una pequeña línea que sobresale del borde de cada letra). Los tipos de letra serif son más tradicionales y se utilizan en documentos impresos.</td>
+                    </tr>
+                    <tr>
+                        <td>sans-serif</td>
+                        <td>El tipo de letra no tiene serifa. Los tipos de letra sans-serif son más modernos y se utilizan en documentos web.</td>
+                    </tr>
+                    <tr>
+                        <td>monospace</td>
+                        <td>El tipo de letra tiene todos los caracteres con el mismo ancho. Los tipos de letra monospace se utilizan para mostrar texto de código fuente.</td>
+                    </tr>
+                    <tr>
+                        <td>cursive</td>
+                        <td>El tipo de letra se basa en una fuente de caligrafía. Los tipos de letra cursive se utilizan para mostrar texto de caligrafía.</td>
+                    </tr>
+                    <tr>
+                        <td>fantasy</td>
+                        <td>El tipo de letra se basa en una fuente decorativa. Los tipos de letra fantasy se utilizan para mostrar texto decorativo.</td>
+                    </tr>
+                </table>
             </article>
         </section>
     </main>
