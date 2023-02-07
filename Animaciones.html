@@ -57,15 +57,11 @@
                     aplica al elemento y el comienzo de la animación
                 </li>
                 <li><b>Dos valores:</b> Cuando se especifican varios valores separados por comas en una propiedad
-                    animation-*, se aplican a las animaciones en el orden en que aparecen los nombres de animación. Para
-                    situaciones en las que el número de animaciones y los valores de propiedad de animación-* no
-                    coinciden, consulte Configuración de múltiples valores de propiedad de animación.
+                    animación, se aplican las animaciones en el orden en que aparecen.
                 </li>
                 <li><b>Valor Negativo:</b> Un valor negativo hace que la animación comience inmediatamente, pero a mitad
                     de su ciclo. Por ejemplo, si especifica -1s como tiempo de retraso de la animación, la animación
-                    comenzará inmediatamente, pero comenzará 1 segundo en la secuencia de animación. Si especifica un
-                    valor negativo para el retraso de la animación, pero el valor inicial está implícito, el valor
-                    inicial se toma desde el momento en que la animación se aplica al elemento.
+                    comenzará inmediatamente, pero comenzará 1 segundo en la secuencia de animación.
                 </li>
             </ul>
             <h4>Ejemplos:</h4>
@@ -75,7 +71,7 @@ animation-duration: 2s</code></pre>
 
             <h4>Resultado:</h4>
 
-            <pre class="resultDelay"><code class="language-css"><div class="box"></div></code></pre>
+            <pre class="results"><code class="language-css"><div class="box"></div></code></pre>
 
         </article>
 
@@ -85,7 +81,7 @@ animation-duration: 2s</code></pre>
             <h4>Sintaxis</h4>
             <pre class="line-numbers"><code class="language-css">animation-duration: [tiempo en segundos(s) o milisegundos (ms)];</code></pre>
             <pre class="line-numbers"><code class="language-css">animation-duration: [tiempo en segundos(s), tiempo en milisegundos(ms)];</code></pre>
-            <pre class="line-numbers"><code class="language-css">animation-delay: [inherit | initial | revert | revert-layer | unset];</code></pre>
+            <pre class="line-numbers"><code class="language-css">animation-duration: [inherit | initial | revert | revert-layer | unset];</code></pre>
 
             <p>Admite uno o dos valores <b>(siempre positivos)</b>, que son los siguientes: </p>
             <ul>
@@ -99,38 +95,406 @@ animation-duration: 2s</code></pre>
                 </li>
             </ul>
             <h4>Ejemplos:</h4>
-            <pre class="line-numbers"><code class="language-css">animation-name: rotate;
+            <pre class="line-numbers"><code class="language-css">animation-name: scale;
 animation-duration: 2s</code></pre>
 
             <h4>Resultado:</h4>
 
-            <pre class="resultDelay"><code class="language-css"><div class="boxDuration"></div></code></pre>
-        </article>
-
-        <article>
-            <h3>animation-direction</h3>
-        </article>
-
-
-
-        <article>
-            <h3>animation-iteration-count</h3>
+            <pre class="results"><code class="language-css"><div class="boxDuration"></div></code></pre>
         </article>
 
         <article>
             <h3>animation-name</h3>
+            <p>Indica los nombres de una o más reglas de <b>@keyframes</b> que describen la animación que se aplicará a
+                un elemento</p>
+            <h4>Sintaxis</h4>
+            <pre class="line-numbers"><code class="language-css">animation-name: animacion1;</code></pre>
+            <pre class="line-numbers"><code class="language-css">animation-name: animacion1, animacion2;</code></pre>
+            <pre class="line-numbers"><code class="language-css">animation-name: [inherit | initial | revert | revert-layer | unset];</code></pre>
+
+            <p>Admite uno o dos valores <b>(siempre positivos)</b>, que son los siguientes: </p>
+            <ul>
+                <li><b>none:</b> No hay animación que se aplique al elemento. Esto es equivalente a no especificar
+                    la propiedad animation-name. Se puede utilizar para desactivar una animación.
+                </li>
+                <li><b>Personalizado:</b>Es un identificador que se compone de una combinación de letras que distinguen
+                    entre mayúsculas y minúsculas
+                    de a-Z y dígitos de 0-9, incluidos los guiones medios (-) y guiones bajos (_), pero no puede
+                    comenzar con un guión medio o guión bajo.
+                </li>
+            </ul>
+            <h4>Ejemplos:</h4>
+            <ul class="examples">
+                <li>Ejemplo 1:</li>
+
+                <pre class="line-numbers"><code class="language-css">
+.boxNameTranslate:hover {
+    animation-name: translate;
+    animation-duration: 2s;
+}
+                </code></pre>
+
+
+                <pre class="line-numbers"><code class="language-css">// CSS de @keyframe "animation-name"
+@keyframes translate {
+    0% {
+        transform: translate(0);
+    }
+    100% {
+        transform: translate(100px);
+    }
+}
+</code></pre>
+
+                <pre class="results"><code class="language-css"><div class="boxNameTranslate"></div></code></pre>
+
+                <li>Ejemplo 2:</li>
+                <pre class="line-numbers"><code class="language-css">
+.boxNameSkew:hover {
+    animation-name: skew;
+    animation-duration: 2s;
+    animation-direction: normal;
+}
+</code></pre>
+
+                <pre class="line-numbers"><code class="language-css">// CSS de @keyframe "animation-name 2"
+@keyframes skew {
+    0% {
+        transform: skew(0);
+    }
+    100% {
+        transform: skew(45deg);
+    }
+}
+</code></pre>
+
+                <pre class="results"><code class="language-css"><div class="boxNameSkew"></div></code></pre>
+            </ul>
         </article>
 
         <article>
+            <h3>animation-direction</h3>
+            <p>Indica si una animación debe reproducirse hacia adelante, hacia atrás o alternar hacia adelante y hacia
+                atrás entre la reproducción de la secuencia</p>
+            <h4>Sintaxis</h4>
+            <pre class="line-numbers"><code class="language-css">animation-direction: [normal | reverse | alternate | alternate-reverse];</code></pre>
+            <pre class="line-numbers"><code
+                    class="language-css">animation-direction: dirección1, dirección2;</code></pre>
+            <pre class="line-numbers"><code class="language-css">animation-direction: [inherit | initial | revert | revert-layer | unset];</code></pre>
+
+            <p>Admite cuatro valores, que son los siguientes: </p>
+            <ul>
+                <li><b>normal:</b> La animación se reproduce hacia adelante cada ciclo. En otras palabras, cada vez que
+                    la animación se repita, la animación se restablecerá al estado inicial y comenzará de nuevo. Este es
+                    el valor predeterminado.
+                </li>
+                <li><b>reverse:</b>La animación se reproduce al revés cada ciclo. Es decir, cada vez que la
+                    animación se repita, la animación se restablecerá al estado final y comenzará de nuevo. Los pasos de
+                    animación se realizan hacia atrás, y las funciones de temporización también se invierten.
+                </li>
+                <li><b>alternate:</b>La animación invierte la dirección de cada ciclo, siendo la primera iteración
+                    hacia adelante. El recuento para determinar si un ciclo es par o impar comienza en uno.
+                </li>
+                <li><b>alternate-reverse:</b>La animación invierte la dirección de cada ciclo, y la primera iteración se
+                    reproduce al revés.
+                </li>
+
+            </ul>
+
+
+            <h4>Ejemplos:</h4>
+            <ul class="examples">
+                <li>Ejemplo 1:</li>
+
+                <pre class="line-numbers"><code class="language-css">
+.boxDirectionNormal:hover {
+    animation-name: translateNormal;
+    animation-duration: 2s;
+    animation-direction: normal;
+    animation-iteration-count: infinite;
+}
+</code></pre>
+
+                <pre class="result"><code class="language-css"><div class="boxDirectionNormal"></div></code></pre>
+
+                <li>Ejemplo 2:</li>
+                <pre class="line-numbers"><code class="language-css">
+.boxDirectionAlternate:hover {
+  animation-name: translateAlternate;
+  animation-duration: 2s;
+  animation-direction: alternate;
+  animation-iteration-count: 4.2;
+}
+</code></pre>
+
+                <pre class="result"><code class="language-css"><div class="boxDirectionAlternate"></div></code></pre>
+
+                <p><b>(Los ejemplos vistos son similares a reverse y alternate-reverse en sentido contrario)</b></p>
+            </ul>
+        </article>
+
+
+        <article>
+            <h3>animation-iteration-count</h3>
+            <p>Indica el número de veces que se debe reproducir una secuencia de animación antes de detenerse.</p>
+            <h4>Sintaxis</h4>
+            <pre class="line-numbers"><code class="language-css">animation-iteration-count: [infinite | number];</code></pre>
+            <pre class="line-numbers"><code
+                    class="language-css">animation-iteration-count: iteración1, iteración2;</code></pre>
+            <pre class="line-numbers"><code class="language-css">animation-iteration-count: [inherit | initial | revert | revert-layer | unset];</code></pre>
+
+            <p>Admite cuatro valores, que son los siguientes: </p>
+            <ul>
+                <li><b>infinite:</b> La animación se reproduce para siempre</li>
+                <li><b>number:</b>El número de veces que se repetirá la animación; esto es 1 por defecto. Puede
+                    especificar valores no enteros para formar parte de un ciclo de animación: por ejemplo, 0.5
+                    reproducirá la mitad del ciclo de animación. Los valores negativos no son válidos.
+                </li>
+            </ul>
+
+
+            <h4>Ejemplos:</h4>
+            <ul class="examples">
+                <li>Ejemplo 1:</li>
+
+                <pre class="line-numbers"><code class="language-css">
+.boxIterationNumber:hover {
+  animation-name: rotate3d;
+  animation-duration: 2s;
+  animation-direction: alternate;
+  animation-iteration-count: 2;
+}
+</code></pre>
+
+                <pre class="line-numbers"><code class="language-css">
+@keyframes rotate3d {
+  0% {
+    transform: perspective(400px) rotate3d(1, 1, 1, 0deg);
+  }
+  100% {
+    transform: perspective(400px) rotate3d(1, 1, 1, 360deg);
+  }
+}
+</code></pre>
+
+                <pre class="result2"><code class="language-css"><div class="boxIterationNumber"></div></code></pre>
+
+                <li>Ejemplo 2:</li>
+                <pre class="line-numbers"><code class="language-css">
+.boxIterationInfinite:hover {
+  animation-name: rotate3d;
+  animation-duration: 0.5s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+</code></pre>
+
+                <pre class="result2"><code class="language-css"><div class="boxIterationInfinite"></div></code></pre>
+            </ul>
+        </article>
+
+
+        <article>
             <h3>animation-play-state</h3>
+            <p>Indica si una animación se está ejecutando o en pausa.</p>
+            <h4>Sintaxis</h4>
+            <pre class="line-numbers"><code class="language-css">animation-play-state: [paused | running];</code></pre>
+            <pre class="line-numbers"><code
+                    class="language-css">animation-play-state: estado1, estado2;</code></pre>
+            <pre class="line-numbers"><code class="language-css">animation-play-state: [inherit | initial | revert | revert-layer | unset];</code></pre>
+
+            <p>Admite cuatro valores, que son los siguientes: </p>
+            <ul>
+                <li><b>runninf:</b> La animación se activa</li>
+                <li><b>paused:</b>la animación se pausa</li>
+            </ul>
+
+
+            <h4>Ejemplos:</h4>
+            <ul class="examples">
+                <li>Ejemplo 1:</li>
+
+                <pre class="line-numbers"><code class="language-css">.boxPlayState {
+  ...
+  animation-play-state: paused;
+}
+
+.boxPlayState:hover {
+  animation-play-state: running;
+}
+</code></pre>
+
+                <pre class="line-numbers"><code class="language-css">
+@keyframes rotateSquare {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+</code></pre>
+
+                <pre class="result2"><code class="language-css"><div class="boxPlayState"></div></code></pre>
+            </ul>
         </article>
 
         <article>
             <h3>animation-timing-function</h3>
+            <p>Indica cómo progresa una animación a lo largo de la duración de cada ciclo.</p>
+            <h4>Sintaxis</h4>
+            <pre class="line-numbers"><code class="language-css">animation-timing-function: [ease | ease-in | ease-out | ease-in-out | linear | step-start | step-end];</code></pre>
+            <pre class="line-numbers"><code
+                    class="language-css">animation-timing-function: cubic-bezier(num1, num2, num3, num4), steps(integer, step-position);</code></pre>
+            <pre class="line-numbers"><code class="language-css">animation-timing-function: [inherit | initial | revert | revert-layer | unset];</code></pre>
+
+            <p>Admite cuatro valores, que son los siguientes: </p>
+            <ul>
+                <li><b>ease:</b> Igual a cubic-bezier (0,25, 0,1, 0,25, 1,0), aumenta en velocidad hacia la mitad de la animación, disminuyendo al final.</li>
+                <li><b>ease-in:</b> Igual a cubic-bezier(0.42, 0, 1.0, 1.0), comienza lentamente, con la velocidad de transición de la propiedad de animación aumentando hasta que se completa.</li>
+                <li><b>ease-out:</b> Igual a cubic-bezier(0, 0, 0.58, 1.0), comienza rápidamente, ralentizando la animación continúa.</li>
+                <li><b>ease-in-out:</b> Igual a cubic-bezier(0,42, 0, 0.58, 1.0), acelerando y luego disminuyendo de nuevo.</li>
+                <li><b>linear:</b> Igual a cubic-bezier (0,0, 0,0, 1,0, 1,0), se anima a una velocidad uniforme.</li>
+                <li><b>cubic-bezier:</b> Define una curva de Bézier personalizada. Los valores numéricos deben estar entre 0 y 1.</li>
+                <li><b>steps:</b> Define una función de paso personalizada. El primer valor numérico define el número de pasos, y el segundo valor define el punto de inicio de cada paso.</li>
+                <li><b>step-start:</b> Igual a steps(1, start), la animación se divide en pasos, con cada paso comenzando en el momento en que se completa el paso anterior.</li>
+                <li><b>step-end:</b> Igual a steps(1, end), la animación se divide en pasos, con cada paso comenzando en el momento en que se completa el paso anterior.</li>
+            </ul>
+
+
+            <h4>Ejemplos:</h4>
+            <ul class="examples">
+                <li>Ejemplo 1:</li>
+
+                <pre class="line-numbers"><code class="language-css">.fillForwards:hover {
+  animation-name: scaleTiming;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+
+  animation-iteration-count: 4;
+}
+</code></pre>
+
+                <pre class="line-numbers"><code class="language-css">
+@keyframes scaleTiming {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(2);
+  }
+</code></pre>
+
+                <pre class="resultsLarge"><code class="language-css"><div class="steps steps1"></div></code></pre>
+                <pre class="resultsLarge"><code class="language-css"><div class="steps steps2"></div></code></pre>
+                <pre class="resultsLarge"><code class="language-css"><div class="steps steps3"></div></code></pre>
+                <pre class="resultsLarge"><code class="language-css"><div class="steps steps4"></div></code></pre>
+
+
+                <li>Ejemplo 2:</li>
+
+                <pre class="line-numbers"><code class="language-css">.fillBackwards:hover {
+  animation-name: scaleTiming;
+  animation-duration: 0.5s;
+  animation-fill-mode: backwards;
+  animation-iteration-count: 4;
+}
+</code></pre>
+
+                <pre class="line-numbers"><code class="language-css">
+@keyframes scaleTiming {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(2);
+  }
+</code></pre>
+
+                <pre class="resultsLarge"><code class="language-css"><div class="bezier bezier1"></div></code></pre>
+                <pre class="resultsLarge"><code class="language-css"><div class="bezier bezier2"></div></code></pre>
+                <pre class="resultsLarge"><code class="language-css"><div class="bezier bezier3"></div></code></pre>
+                <pre class="resultsLarge"><code class="language-css"><div class="bezier bezier4"></div></code></pre>
+            </ul>
+
         </article>
 
         <article>
             <h3>animation-fill-mode</h3>
+            <p>Indica cómo una animación CSS aplica estilos a su objetivo antes y después de su ejecución.</p>
+            <h4>Sintaxis</h4>
+            <pre class="line-numbers"><code class="language-css">animation-fill-mode: [none | forwards | backwards | both];</code></pre>
+            <pre class="line-numbers"><code
+                    class="language-css">animation-fill-mode: estado1, estado2;</code></pre>
+            <pre class="line-numbers"><code class="language-css">animation-fill-mode: [inherit | initial | revert | revert-layer | unset];</code></pre>
+
+            <p>Admite cuatro valores, que son los siguientes: </p>
+            <ul>
+                <li><b>none:</b> La animación no aplicará ningún estilo, en su caso utilizará cualquier otra regla CSS
+                    aplicada a él. Este es el valor predeterminado.
+                </li>
+                <li><b>forwards:</b> Se conservarán los valores establecidos por el <b>último fotograma clave</b>
+                    encontrado durante la ejecución. El último fotograma clave depende del valor de la
+                    animación-dirección y el recuento de animación-iteración
+                </li>
+                <li><b>backwards:</b> Se conservarán los valores establecidos por el <b>primer fotograma clave</b>
+                    encontrado durante la ejecución. El último fotograma clave depende del valor de la
+                    animación-dirección y el recuento de animación-iteración:
+                </li>
+                <li><b>both:</b> La animación seguirá las reglas tanto hacia adelante como hacia atrás, extendiendo así
+                    las propiedades de la animación en ambas direcciones.
+                </li>
+            </ul>
+
+
+            <h4>Ejemplos:</h4>
+            <ul class="examples">
+                <li>Ejemplo 1:</li>
+
+                <pre class="line-numbers"><code class="language-css">.fillForwards:hover {
+  animation-name: scaleTiming;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+
+  animation-iteration-count: 4;
+}
+</code></pre>
+
+                <pre class="line-numbers"><code class="language-css">
+@keyframes scaleTiming {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(2);
+  }
+</code></pre>
+
+                <pre class="results"><code class="language-css"><div class="fillForwards"></div></code></pre>
+
+
+                <li>Ejemplo 2:</li>
+
+                <pre class="line-numbers"><code class="language-css">.fillBackwards:hover {
+  animation-name: scaleTiming;
+  animation-duration: 0.5s;
+  animation-fill-mode: backwards;
+  animation-iteration-count: 4;
+}
+</code></pre>
+
+                <pre class="line-numbers"><code class="language-css">
+@keyframes scaleTiming {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(2);
+  }
+</code></pre>
+
+                <pre class="results"><code class="language-css"><div class="fillBackwards"></div></code></pre>
+            </ul>
         </article>
 
     </section>

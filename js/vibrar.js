@@ -20,3 +20,4 @@ if(window.navigator && window.navigator.vibrate){
 }
 else
 	alert("Tu navegador no es compatible con la API de vibración");
+
