@@ -39,8 +39,8 @@
     </nav>
     <main>
         <div>
-            <h2>TUTORIAL CSS3 - Pseudoclases</h2>
-            <h3>Subtitulo</h3>
+            <h2>TUTORIAL CSS3 - Pseudos</h2>
+            <h3>Pseudoclases y pseudoelementos</h3>
         </div>
 
         <section>
@@ -118,23 +118,30 @@ a:active {
                 <input type="email" class="prueba_valid" value="texto">
             </article>
             <article>
-                <h3>::after</h3>
-                <p>
-                    La pseudoclase <span>:hover</span> representa a un elemento sobre el que el usuario ha colocado el
-                    cursor (o del dedo en dispositivos táctiles).
-                </p>
-                <h4>Sintaxis</h4>
-                <pre class="line-numbers"><code class="language-css">elemento:hover {
-    /* Definición de estilos */
-}</code></pre>
-                <h4>Ejemplo de uso</h4>
-                <pre class="line-numbers"><code class="language-css">button:hover {
-    background-color: red;
-    color: white;
-}</code></pre>
-                <button class="prueba_hover">Al pasar el ratón por encima del botón, pasará a tener fondo rojo y
-                    texto blanco</button>
-            </article>
+                    <h3>::after y ::before</h3>
+                    <p>El pseudoelemento <span>::after</span> se encarga de crear un pseudoelemento que es el último hijo
+                        del elemento seleccionado.</p>
+                    <p>El pseudoelemento <span>::before</span> al contrario de <span>::after</span>, crea el pseudoelemento
+                        que es el primer hijo del elemento seleccionado.</p>
+                    <h4>Sintaxis</h4>
+                    <pre class="line-numbers"><code class="language-css">elemento::after {
+        /*Contenido que se quiera añadir*/
+        };</code></pre>
+                    <pre class="line-numbers"><code class="language-css">elemento::before {
+        /*Contenido que se quiera añadir*/
+        };</code></pre>
+                    <h4>Ejemplos:</h4>
+                    <pre class="line-numbers"><code class="language-css">p::after {
+        content: "♥";
+        color:red;
+        }</code></pre>
+                    <p class="prueba_after">Este tutorial es genial</p>
+                    <pre class="line-numbers"><code class="language-css">a::before {
+        content: "→ ";
+        color:red;
+        }</code></pre>
+                    <p>Compre bitcoin aqui <a href="#prueba" class="prueba_before">Bitcoin</a></p>
+                </article>
         </section>
     </main>
     <footer>

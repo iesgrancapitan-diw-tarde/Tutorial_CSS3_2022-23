@@ -17,3 +17,34 @@ input.prueba_valid:valid {
     background-color: green;
     color: white;
 }
+
+input.prueba_invalid:invalid {
+    background-color: red;
+    color: white;
+}
+
+ul.prueba_first_child>li:first-child {
+    color: red;
+}
+
+ul.prueba_last_child>li:last-child {
+    color: green;
+}
+
+ul.prueba_nth>li:nth-child(2) {
+    color: blue;
+}
+
+.prueba_after::after {
+    content: "♥";
+    color:red;
+}
+
+.prueba_before{
+    text-decoration: none;
+}
+
+.prueba_before::before{
+    content: "→ ";
+    color: red;
+}
