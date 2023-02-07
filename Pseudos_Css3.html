@@ -39,8 +39,8 @@
     </nav>
     <main>
         <div>
-            <h2>TUTORIAL CSS3 - Pseudoclases</h2>
-            <h3>Subtitulo</h3>
+            <h2>TUTORIAL CSS3 - Pseudos</h2>
+            <h3>Pseudoclases y pseudoelementos</h3>
         </div>
 
         <section>
@@ -118,22 +118,135 @@ a:active {
                 <input type="email" class="prueba_valid" value="texto">
             </article>
             <article>
-                <h3>::after</h3>
+                <h3>:invalid</h3>
                 <p>
-                    La pseudoclase <span>:hover</span> representa a un elemento sobre el que el usuario ha colocado el
-                    cursor (o del dedo en dispositivos táctiles).
+                    La pseudoclase <span>:invalid</span> representa a un elemento que contiene un valor no válido. Se
+                    suele utilizar para validar formularios.
                 </p>
                 <h4>Sintaxis</h4>
-                <pre class="line-numbers"><code class="language-css">elemento:hover {
+                <pre class="line-numbers"><code class="language-css">elemento:invalid {
     /* Definición de estilos */
 }</code></pre>
                 <h4>Ejemplo de uso</h4>
-                <pre class="line-numbers"><code class="language-css">button:hover {
+                <pre class="line-numbers"><code class="language-css">input:invalid {
     background-color: red;
     color: white;
 }</code></pre>
-                <button class="prueba_hover">Al pasar el ratón por encima del botón, pasará a tener fondo rojo y
-                    texto blanco</button>
+                <p>
+                    Estos elementos <span>input</span> son de tipo <span>email</span>, por lo que solo serán válidos si
+                    el valor introducido es un email:
+                </p>
+                <input type="email" class="prueba_invalid" value="mail@mail.com">
+                <input type="email" class="prueba_invalid" value="texto">
+            </article>
+            <article>
+                <h3>:first-child</h3>
+                <p>
+                    La pseudoclase <span>:first-child</span> representa a un elemento que es el primer hijo de su
+                    elemento padre.
+                </p>
+                <h4>Sintaxis</h4>
+                <pre class="line-numbers"><code class="language-css">elemento:first-child {
+    /* Definición de estilos */
+}</code></pre>
+                <h4>Ejemplo de uso</h4>
+                <pre class="line-numbers"><code class="language-css">ul > li:first-child {
+    color: red;
+}</code></pre>
+                <p>
+                    El primer elemento de la lista aparece en rojo:
+                </p>
+                <ul class="prueba_first_child">
+                    <li>Primer elemento</li>
+                    <li>Segundo elemento</li>
+                    <li>Tercer elemento</li>
+                </ul>
+            </article>
+            <article>
+                <h3>:last-child</h3>
+                <p>
+                    La pseudoclase <span>:last-child</span> representa a un elemento que es el último hijo de su
+                    elemento padre.
+                </p>
+                <h4>Sintaxis</h4>
+                <pre class="line-numbers"><code class="language-css">elemento:last-child {
+    /* Definición de estilos */
+}</code></pre>
+                <h4>Ejemplo de uso</h4>
+                <pre class="line-numbers"><code class="language-css">ul > li:last-child {
+    color: green;
+}</code></pre>
+                <p>
+                    El último elemento de la lista aparece en verde:
+                </p>
+                <ul class="prueba_last_child">
+                    <li>Primer elemento</li>
+                    <li>Segundo elemento</li>
+                    <li>Tercer elemento</li>
+                </ul>
+            </article>
+            <article>
+                <h3>:nth-child()</h3>
+                <p>
+                    La pseudoclase <span>:nth-child()</span> representa a un elemento que es el hijo n-ésimo de su
+                    elemento padre.
+                </p>
+                <h4>Sintaxis</h4>
+                <pre class="line-numbers"><code class="language-css">elemento:nth-child(n) {
+    /* Definición de estilos */
+}</code></pre>
+                <h4>Ejemplo de uso</h4>
+                <pre class="line-numbers"><code class="language-css">ul > li:nth-child(2) {
+    color: blue;
+}</code></pre>
+                <p>
+                    El segundo elemento de la lista aparece en azul:
+                </p>
+                <ul class="prueba_nth">
+                    <li>Primer elemento</li>
+                    <li>Segundo elemento</li>
+                    <li>Tercer elemento</li>
+                </ul>
+            </article>
+            <article>
+                <h3>::after</h3>
+                <p>
+                    La pseudo-elemento <span>::after</span> representa un elemento que se inserta después del
+                    contenido de su elemento padre.
+                </p>
+                <h4>Sintaxis</h4>
+                <pre class="line-numbers"><code class="language-css">elemento::after {
+    /* Definición de estilos */
+}</code></pre>
+                <h4>Ejemplo de uso</h4>
+                <pre class="line-numbers"><code class="language-css">p::after {
+    content: " - Texto añadido";
+    color: green;
+}</code></pre>
+                <p>
+                    El texto añadido aparece después del contenido del elemento <span>p</span>:
+                </p>
+                <p class="prueba_after">Texto del elemento</p>
+            </article>
+            <article>
+                <h3>::before</h3>
+                <p>
+                    La pseudo-elemento <span>::before</span> representa un elemento que se inserta antes del
+                    contenido de su elemento padre.
+                </p>
+                <h4>Sintaxis</h4>
+                <pre class="line-numbers"><code class="language-css">elemento::before {
+    /* Definición de estilos */
+}</code></pre>
+                <h4>Ejemplo de uso</h4>
+                <pre class="line-numbers"><code class="language-css">p::before {
+    content: "Texto añadido - ";
+    color: green;
+}</code></pre>
+                <p>
+                    El texto añadido aparece antes del contenido del elemento <span>p</span>:
+                </p>
+                <p class="prueba_before">Texto del elemento</p>
             </article>
         </section>
     </main>
