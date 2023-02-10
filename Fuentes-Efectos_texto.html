@@ -163,7 +163,6 @@
 }</code>
                 </pre>
             </article>
-
             <article>
                 <h3>font-weight</h3>
                 <p>Establece la negrita de la fuente.</p>
@@ -189,7 +188,6 @@
                 </pre>
                 <p>El valor numerico 400 corresponde a font-weigth: normal; y el valor numerico 700 corresponde a font-weight: bold;</p>
             </article>
-
             <article>
                 <h3>font-stretch</h3>
                 <p>Modifica el ancho de la fuente.</p>
@@ -212,6 +210,7 @@
 }</code>
                 </pre>
                 <p>Algunas fuentes de letra no permite esta propiedad</p>
+            </article>
             <article>
                 <h3>font-style</h3>
                 <p>Se usa para activar y desactivar el texto en cursiva.</p>
@@ -275,6 +274,35 @@
     text-decoration: underline;
     text-decoration: overline;
     text-decoration: line-through;
+}</code>
+                </pre>
+            </article>
+            <article>
+                <h3>text-shadow</h3>
+                <p>Aplica sombras a los textos, puede tomar hasta cuatro valores.</p>
+                <h4>Sintaxis</h4>
+                <pre
+                    class="line-numbers"><code class="language-css">text-shadow: [Aqui va la sintaxis de cada propiedad];</code></pre>
+                <p>Las cuatro propiedades son las siguientes: </p>
+                <ul>
+                    <li>El desplazamiento horizontal de la sombra desde el texto original; admite la mayoría de las unidades y magnitudes de que dispone CSS, pero lo más habitual es usar px. Es un valor obligatorio.</li>
+                    <li>El desplazamiento vertical de la sombra desde el texto original; se comporta básicamente igual que el desplazamiento horizontal, excepto porque mueve la sombra arriba/abajo, y no hacia derecha/izquierda. Es un valor obligatorio.</li>
+                    <li>El radio de desenfoque; cuanto más alto es este valor, mayor es la dispersión de la sombra. Si no se incluye este valor, el valor por defecto es 0, y no hay desenfoque. Esta propiedad admite la mayoría de las unidades y magnitudes de que dispone el CSS.</li>
+                    <li>El color de base de la sombra, que admite cualquier unidad de color de que dispone CSS. Si no se incluye este valor, el valor predeterminado es negro.</li>
+                </ul>
+                <h4>Ejemplo:</h4>
+                <pre class="line-numbers"><code class="language-css">p {
+    text-shadow: -1px -1px 1px #aaa;
+}</code>
+                                </pre>
+                <h4>Sombras Múltiples</h4>
+                <p>También puede agregar múlriples sombras.</p>
+                <h4>Ejemplos:</h4>
+                <pre class="line-numbers"><code class="language-css">p {
+    text-shadow: -1px -1px 1px #aaa,
+                  0px 4px 1px rgba(0,0,0,0.5),
+                  4px 4px 5px rgba(0,0,0,0.7),
+                  0px 0px 7px rgba(0,0,0,0.4);
 }</code>
                 </pre>
             </article>
