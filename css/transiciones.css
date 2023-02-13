@@ -1,0 +1,206 @@
+/*TRANSITION-DELAY*/
+
+.transition-delay-ejemplo-segundos {
+  width: 150px;
+  height: 150px;
+  background: blue;
+  transition-duration: 4s;
+  transition-delay: 2s;
+}
+
+.transition-delay-ejemplo-segundos:hover {
+    width: 300px;
+}
+
+.transition-delay-ejemplo-milisegundos {
+    width: 150px;
+    height: 150px;
+    background: blue;
+    transition-duration: 4s;
+    transition-delay: 20ms;
+}
+  
+.transition-delay-ejemplo-milisegundos:hover {
+    width: 300px;
+}
+
+/*TRANSITION-DURATION*/
+
+.transition-duration-ejemplo-segundos {
+    width: 100px;
+    height: 100px;
+    background: red;
+    transition-duration: 4s;
+}
+
+.transition-duration-ejemplo-segundos:hover {
+    height: 150px;
+}
+
+.transition-duration-ejemplo-milisegundos {
+    width: 100px;
+    height: 100px;
+    background: red;
+    transition-duration: 400ms;
+}
+  
+.transition-duration-ejemplo-milisegundos:hover {
+    height: 150px;
+}
+
+/*TRANSITION-TIMING-FUNCTION*/
+
+.transition-timing-function div {
+    width: 100px;
+    height: 50px;
+    background: yellow;
+    color: black;
+    font-weight: bold;
+    transition: width 2s;
+}
+
+.transition-timing-function div:hover {
+    width: 300px;
+}
+
+#transition-timing-function-linear {
+    transition-timing-function: linear;
+}
+                
+#transition-timing-function-ease {
+    transition-timing-function: ease;
+}
+                
+#transition-timing-function-ease-in {
+    transition-timing-function: ease-in;
+}
+
+#transition-timing-function-ease-out {
+    transition-timing-function: ease-out;
+}
+
+#transition-timing-function-ease-in-out {
+    transition-timing-function: ease-in-out;
+}
+
+
+.transition-timing-function-cubic div {
+    width: 160px;
+    height: 70px;
+    background: yellow;
+    color: black;
+    font-weight: bold;
+    transition: width 2s;
+}
+
+.transition-timing-function-cubic div:hover {
+width: 300px;
+}
+
+#transition-timing-function-cubic-bezier1 {
+    transition-timing-function: cubic-bezier(1,0,0.5,0);
+}
+
+#transition-timing-function-cubic-bezier2 {
+    transition-timing-function: cubic-bezier(0,0.3,1,0.8);
+}
+
+#transition-timing-function-cubic-bezier3 {
+    transition-timing-function: cubic-bezier(0.5,1,0.4,0.7);
+}
+
+#transition-timing-function-cubic-bezier4 {
+    transition-timing-function: cubic-bezier(0.3,0.6,0.4,0.5);
+}
+
+#transition-timing-function-cubic-bezier5 {
+    transition-timing-function: cubic-bezier(1,0.3,0.4,1);
+}
+
+
+#transition-timing-function-steps1 {
+    transition-timing-function: step-start;
+}
+
+#transition-timing-function-steps2 {
+    transition-timing-function: step-end;
+}
+
+#transition-timing-function-steps3 {
+    transition-timing-function: steps(8,end);
+}
+
+#transition-timing-function-steps4 {
+    transition-timing-function: steps(8,start);
+}
+
+#transition-timing-function-steps5 {
+    transition-timing-function: steps(15);
+}
+                             
+/*TRANSITION-PROPERTY*/
+
+.transition-property1 {
+    width: 90px;
+    height: 90px;
+    background: green;
+    transition-property: none;
+    transition-duration: 2s;
+}
+
+.transition-property1:hover {
+    width: 200px;
+    height: 200px;
+    font-size: 40px;
+    background-color: cyan;
+    color: gray;
+}
+
+.transition-property2 {
+    width: 90px;
+    height: 90px;
+    background: green;
+    transition-property: all;
+    transition-duration: 2s;
+}
+
+.transition-property2:hover {
+    width: 200px;
+    height: 200px;
+    font-size: 40px;
+    background-color: cyan;
+    color: gray;
+}
+
+.transition-property3 {
+    width: 90px;
+    height: 90px;
+    background: green;
+    transition-property: width, height,background-color;
+    transition-duration: 2s;
+}
+
+.transition-property3:hover {
+    width: 200px;
+    height: 200px;
+    font-size: 40px;
+    background-color: cyan;
+    color: gray;
+}
+
+/*TRANSITION*/
+
+.transition-transition {
+    width: 90px;
+    height: 90px;
+    background-color: blue;
+    transition: all 4s ease 1s;
+
+}
+
+.transition-transition:hover {
+    width: 200px;
+    height: 120px;
+    background-color: rosybrown;
+
+}
