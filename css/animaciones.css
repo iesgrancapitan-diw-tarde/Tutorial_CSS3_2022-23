@@ -303,16 +303,16 @@
 }
 
 .bezier {
-    background-color: #68B984;
-    width: 100px;
-    height: 10px;
+  background-color: #68B984;
+  width: 100px;
+  height: 10px;
 }
 
 .bezier1:hover {
-    animation-name: steps;
-   animation-timing-function: ease;
-    animation-duration: 2s;
-    animation-iteration-count: 4;
+  animation-name: steps;
+  animation-timing-function: ease;
+  animation-duration: 2s;
+  animation-iteration-count: 4;
 }
 
 .bezier2:hover {
@@ -337,10 +337,10 @@
 }
 
 @keyframes steps {
-    0% {
-        width: 100px;
-    }
-    100% {
-        width: 500px;
-    }
+  0% {
+    width: 100px;
+  }
+  100% {
+    width: 500px;
+  }
 }
