@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>TUTORIAL CSS3 - 2021/2022 - Diseño de Interfaces Web - CFGS DAW - IES Gran Capitán</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/prism.css">
+    <link rel="stylesheet" href="css/Pseudos_Css3.css">
+    <script src="js/prism.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1><a href="index.html">TUTORIAL CSS3 - 2020/2021</a></h1>
+        <h2><img src="icon/language-css3.svg"></h2>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="Bordes.html">Bordes</a></li>
+            <li><a href="Fondos.html">Fondos</a></li>
+            <li><a href="Efectos_texto.html">Fuentes y Ef Texto</a></li>
+            <li><a href="Transformaciones.html">Transformac.</a></li>
+            <li><a href="Transiciones.html">Transiciones</a></li>
+            <li><a href="Animaciones.html">Animaciones</a></li>
+            <li><a href="Col_mult.html">Col Múltiples</a></li>
+            <li><a href="Color.html">Color y Degradado</a></li>
+            <li><a href="Pseudos_Css3.html">Pseudos CSS3</a></li>
+            <li><a href="Svg_filter.html">Filter y SVG</a></li>
+
+        </ul>
+    </nav>
+    <main>
+        <div>
+            <h2>TUTORIAL CSS3 - Pseudos</h2>
+            <h3>Pseudoclases y pseudoelementos</h3>
+        </div>
+
+        <section>
+            <article>
+                <h3>:active</h3>
+                <p>
+                    La pseudoclase <span>:active</span> representa a un elemento que el usuario ha activado,
+                    generalmente, haciendo clic sobre el elemento con el botón izquierdo del ratón. Se suele utilizar en
+                    botones y enlaces.
+                </p>
+                <h4>Sintaxis</h4>
+                <pre class="line-numbers"><code class="language-css">elemento:active {
+    /* Definición de estilos */
+}</code></pre>
+                <p>Los estilos definidos por <span>:active</span> pueden ser anulados por las posteriores definiciones
+                    de <span>:link</span>,
+                    <span>:hover</span> o <span>:visited</span>. Es una buena práctica colocar <span>:active</span>
+                    después de todas las definiciones
+                    de estilo de los enlaces.
+                </p>
+
+                <h4>Ejemplo de uso</h4>
+                <pre class="line-numbers"><code class="language-css">button:active {
+    color: red;
+    background-color: black;
+}
+
+a:active {
+    background-color: yellow;
+    text-decoration: none;
+}</code></pre>
+                <button class="prueba_active">Al pinchar en el botón, pasará a tener texto rojo sobre fondo
+                    negro</button>
+                <a href="#prueba" class="prueba_active2">Al pinchar en el enlace, se pondrá sobre fondo amarillo y no
+                    tendrá subrayado</a>
+            </article>
+            <article>
+                <h3>:hover</h3>
+                <p>
+                    La pseudoclase <span>:hover</span> representa a un elemento sobre el que el usuario ha colocado el
+                    cursor (o del dedo en dispositivos táctiles).
+                </p>
+                <h4>Sintaxis</h4>
+                <pre class="line-numbers"><code class="language-css">elemento:hover {
+    /* Definición de estilos */
+}</code></pre>
+                <h4>Ejemplo de uso</h4>
+                <pre class="line-numbers"><code class="language-css">button:hover {
+    background-color: red;
+    color: white;
+}</code></pre>
+                <button class="prueba_hover">Al pasar el ratón por encima del botón, pasará a tener fondo rojo y
+                    texto blanco</button>
+            </article>
+            <article>
+                <h3>:valid</h3>
+                <p>
+                    La pseudoclase <span>:valid</span> representa a un elemento que contiene un valor válido. Se suele
+                    utilizar para validar formularios.
+                </p>
+                <h4>Sintaxis</h4>
+                <pre class="line-numbers"><code class="language-css">elemento:valid {
+    /* Definición de estilos */
+}</code></pre>
+                <h4>Ejemplo de uso</h4>
+                <pre class="line-numbers"><code class="language-css">input:valid {
+    background-color: green;
+    color: white;
+}</code></pre>
+                <p>
+                    Estos elementos <span>input</span> son de tipo <span>email</span>, por lo que solo serán válidos si
+                    el valor introducido es un email:
+                </p>
+                <input type="email" class="prueba_valid" value="mail@mail.com">
+                <input type="email" class="prueba_valid" value="texto">
+            </article>
+            <article>
+                    <h3>::after y ::before</h3>
+                    <p>El pseudoelemento <span>::after</span> se encarga de crear un pseudoelemento que es el último hijo
+                        del elemento seleccionado.</p>
+                    <p>El pseudoelemento <span>::before</span> al contrario de <span>::after</span>, crea el pseudoelemento
+                        que es el primer hijo del elemento seleccionado.</p>
+                    <h4>Sintaxis</h4>
+                    <pre class="line-numbers"><code class="language-css">elemento::after {
+        /*Contenido que se quiera añadir*/
+        };</code></pre>
+                    <pre class="line-numbers"><code class="language-css">elemento::before {
+        /*Contenido que se quiera añadir*/
+        };</code></pre>
+                    <h4>Ejemplos:</h4>
+                    <pre class="line-numbers"><code class="language-css">p::after {
+        content: "♥";
+        color:red;
+        }</code></pre>
+                    <p class="prueba_after">Este tutorial es genial</p>
+                    <pre class="line-numbers"><code class="language-css">a::before {
+        content: "→ ";
+        color:red;
+        }</code></pre>
+                    <p>Compre bitcoin aqui <a href="#prueba" class="prueba_before">Bitcoin</a></p>
+                </article>
+        </section>
+    </main>
+    <footer>
+        <div>David López Moreno</div>
+        <a href="" class="social"><img src="icon/twitter.svg" alt="Twitter"></a>
+        <a href="https://github.com/dlopezmfp" class="social"><img src="icon/github.svg" alt="GitHub"></a>
+    </footer>
+</body>
+
+</html>
