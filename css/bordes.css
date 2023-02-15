@@ -1,5 +1,11 @@
 /* Creado por Francisco José Gómez Ruiz y Andrés Castillero Moriana */
 
+/* Engloba todo el ejemplo */
+.bordes_radius {
+    display: flex;
+    justify-content: left;
+}
+
 /** border_color **/
 [class^=bordes_color] {
     border: 5px solid;
@@ -20,29 +26,23 @@
 }
 
 /** border_radius **/
-/* Engloba todo el ejemplo */
-.bordes_radius{
-    display: flex;
-    justify-content: left;
-}
-
 /* Primer ejemplo */
-.bordes_radiusEjemplo1{
-	width: 300px;
-	height: 50px;
-	background-color: yellow;
-	border:10px solid red;
-	border-radius: 20px 5px 5px 20px;
-    margin:10px;
+.bordes_radiusEjemplo1 {
+    width: 300px;
+    height: 50px;
+    background-color: yellow;
+    border: 10px solid red;
+    border-radius: 20px 5px 5px 20px;
+    margin: 10px;
 }
 
-.bordes_radiusEjemplo2{
+.bordes_radiusEjemplo2 {
     width: 300px;
-	height: 50px;
-	background-color: yellow;
-	border:10px solid red;
-	border-radius: 2em/5em;
-    margin:10px;
+    height: 50px;
+    background-color: yellow;
+    border: 10px solid red;
+    border-radius: 2em/5em;
+    margin: 10px;
 }
 
 /** border_style **/
@@ -119,4 +119,10 @@
 
 .bordes_widthEjemplo3 {
     border-width: medium 1.25ex thin 2cm;
+}
+
+/** border-image-source **/
+.bordes_image_sourceEjemplo {
+    border: 35px solid;
+    border-image-source: url("https://www.w3schools.com/css/img_tree.png");
 }
