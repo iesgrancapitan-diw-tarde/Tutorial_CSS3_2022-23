@@ -20,7 +20,7 @@
 <body>
     <header>
         <h1><a href="index.html">TUTORIAL CSS3 - 2020/2021</a></h1>
-        <h2><img src="icon/language-css3.svg"></h2>
+        <h2><img alt="logo CSS3" src="icon/language-css3.svg"></h2>
     </header>
 
     <nav>
@@ -132,6 +132,7 @@ border-radius: 2em/5em;</code></pre>
                     <li><span>outset:</span> Especifica un border con un efecto 3D de saliente. Cambia de color según el
                         indicado en border-color.</li>
                 </ul>
+                <p>Se pueden indicar hasta 4 y se irán aplicando en sentido horario(top, right, bottom, left).</p>
                 <h4>Ejemplos:</h4>
                 <pre class="line-numbers"><code class="language-css">border-style: none;
 border-style: hidden;
@@ -156,6 +157,41 @@ border-style: outset;</code></pre>
                     <div class="bordes_styleEjemplo10">outset</div>
                     <div class="bordes_styleEjemplo11">groove rojo</div>
                     <div class="bordes_styleEjemplo12">inset azul</div>
+                </div>
+            </article>
+
+            <article>
+                <h3>border-width</h3>
+                <p>Fija un ancho al borde.</p>
+                <h4>Sintaxis</h4>
+                <pre
+                    class="line-numbers"><code class="language-css">border-width: medium|thin|thick|[length]|initial|inherit;</code></pre>
+                <p>Admite de uno de los siguientes valores: </p>
+                <ul>
+                    <li><span>thin.</span></li>
+                    <li><span>medium.</span></li>
+                    <li><span>thick.</span></li>
+                    <li><span>length:</span> Usando alguna unidad de medida.</li>
+                </ul>
+                <p>Unidades de medida más comunes:</p>
+                <ul>
+                    <li><span>px</span></li>
+                    <li><span>ex</span></li>
+                    <li><span>em</span></li>
+                    <li><span>rem</span></li>
+                    <li><span>cm</span></li>
+                    <li><span>in</span></li>
+                </ul>
+                <p>Se pueden indicar hasta 4 y se irán aplicando en sentido horario(top, right, bottom, left).</p>
+                <h4>Ejemplos:</h4>
+                <pre class="line-numbers"><code class="language-css">border-width: 1em;
+border-width: thick 4px 1rem;
+border-width: medium 1.25ex thin 2cm;
+</code></pre>
+                <div class="bordes_radius">
+                    <div class="bordes_widthEjemplo1">Ejemplo 1</div>
+                    <div class="bordes_widthEjemplo2">Ejemplo 2</div>
+                    <div class="bordes_widthEjemplo3">Ejemplo 3</div>
                 </div>
             </article>
         </section>

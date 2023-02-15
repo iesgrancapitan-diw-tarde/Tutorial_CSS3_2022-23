@@ -101,3 +101,22 @@
     border-color: blue;
     border-style: inset;
 }
+
+/** border-width **/
+[class^=bordes_width] {
+    border: 5px solid;
+    margin-left: 1%;
+    padding: 1%;
+}
+
+.bordes_widthEjemplo1 {
+    border-width: 1em;
+}
+
+.bordes_widthEjemplo2 {
+    border-width: thick 4px 1rem;
+}
+
+.bordes_widthEjemplo3 {
+    border-width: medium 1.25ex thin 2cm;
+}
