@@ -70,10 +70,14 @@ border-color: hsla(89, 43%, 51%, 0.3);</code></pre>
                 </div>
                 <p>También existen las propiedades <a
                         href="https://developer.mozilla.org/en-US/docs/Web/CSS/border-top-color"
-                        target="_blank"><code>border-top-color</code></a>, <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/border-right-color"
-                        target="_blank"><code>border-right-color</code></a>, <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/border-bottom-color"
-                        target="_blank"><code>border-bottom-color</code></a> y <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/border-left-color"
-                        target="_blank"><code>border-left-color</code></a> que permiten definir el color de cada uno de los lados del borde individualmente.</p>
+                        target="_blank"><code>border-top-color</code></a>, <a
+                        href="https://developer.mozilla.org/en-US/docs/Web/CSS/border-right-color"
+                        target="_blank"><code>border-right-color</code></a>, <a
+                        href="https://developer.mozilla.org/en-US/docs/Web/CSS/border-bottom-color"
+                        target="_blank"><code>border-bottom-color</code></a> y <a
+                        href="https://developer.mozilla.org/en-US/docs/Web/CSS/border-left-color"
+                        target="_blank"><code>border-left-color</code></a> que permiten definir el color de cada uno de
+                    los lados del borde individualmente.</p>
             </article>
 
             <article>
@@ -103,13 +107,65 @@ border-radius: 2em/5em;</code></pre>
                     <div class="bordes_radiusEjemplo2"></div>
                 </div>
             </article>
+
+            <article>
+                <h3>border-style</h3>
+                <p>Fija un estilo al borde.</p>
+                <h4>Sintaxis</h4>
+                <pre
+                    class="line-numbers"><code class="language-css">border-style: none|hidden|dotted|dashed|solid|double|groove|ridge|inset|outset|initial|inherit;</code></pre>
+                <p>Admite de uno de los siguientes valores: </p>
+                <ul>
+                    <li><span>none:</span> Valor por defecto. Especifíca que no se muestre ningún borde.</li>
+                    <li><span>hidden:</span> Igual que none excepto en resolución de conflictos de borders para
+                        elementos de tabla.</li>
+                    <li><span>dotted:</span> Especifica un border con puntos.</li>
+                    <li><span>dashed:</span> Especifica un border con guiones.</li>
+                    <li><span>solid:</span> Especifica un border sólido.</li>
+                    <li><span>double:</span> Especifica un border doble.</li>
+                    <li><span>groove:</span> Especifica un border con un efecto 3D de surco. Cambia de color según el
+                        indicado en border-color.</li>
+                    <li><span>ridge:</span> Especifica un border con un efecto 3D de hendidura. Cambia de color según el
+                        indicado en border-color.</li>
+                    <li><span>inset:</span> Especifica un border con un efecto 3D de incrustación. Cambia de color según
+                        el indicado en border-color.</li>
+                    <li><span>outset:</span> Especifica un border con un efecto 3D de saliente. Cambia de color según el
+                        indicado en border-color.</li>
+                </ul>
+                <h4>Ejemplos:</h4>
+                <pre class="line-numbers"><code class="language-css">border-style: none;
+border-style: hidden;
+border-style: dotted;
+border-style: dashed;
+border-style: solid;
+border-style: double;
+border-style: groove;
+border-style: ridge;
+border-style: inset;
+border-style: outset;</code></pre>
+                <div class="bordes_radius">
+                    <div class="bordes_styleEjemplo1">none</div>
+                    <div class="bordes_styleEjemplo2">hidden</div>
+                    <div class="bordes_styleEjemplo3">dotted</div>
+                    <div class="bordes_styleEjemplo4">dashed</div>
+                    <div class="bordes_styleEjemplo5">solid</div>
+                    <div class="bordes_styleEjemplo6">double</div>
+                    <div class="bordes_styleEjemplo7">groove</div>
+                    <div class="bordes_styleEjemplo8">ridge</div>
+                    <div class="bordes_styleEjemplo9">inset</div>
+                    <div class="bordes_styleEjemplo10">outset</div>
+                    <div class="bordes_styleEjemplo11">groove rojo</div>
+                    <div class="bordes_styleEjemplo12">inset azul</div>
+                </div>
+            </article>
         </section>
     </main>
 
     <footer>
         <div>Andrés Castillero Moriana y Francisco José Gómez Ruiz</div>
-        <a href="https://github.com/a19camoan" class="social"><img src="icon/github.svg" alt="GitHub"></a>
-        <a href="https://github.com/frannn-secur" class="social"><img src="icon/github.svg" alt="GitHub"></a>
+        <a href="https://github.com/a19camoan" class="social"><img src="icon/github.svg" alt="GitHub Andrés"></a>
+        <a href="https://github.com/frannn-secur" class="social"><img src="icon/github.svg"
+                alt="GitHub Francisco José"></a>
     </footer>
 </body>
 

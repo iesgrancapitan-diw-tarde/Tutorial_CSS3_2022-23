@@ -44,3 +44,60 @@
 	border-radius: 2em/5em;
     margin:10px;
 }
+
+/** border_style **/
+[class^=bordes_style] {
+    border: 5px;
+    margin-left: 1%;
+    padding: 1%;
+}
+
+.bordes_styleEjemplo1 {
+    border-style: none;
+}
+
+.bordes_styleEjemplo2 {
+    border-style: hidden;
+}
+
+.bordes_styleEjemplo3 {
+    border-style: dotted;
+}
+
+.bordes_styleEjemplo4 {
+    border-style: dashed;
+}
+
+.bordes_styleEjemplo5 {
+    border-style: solid;
+}
+
+.bordes_styleEjemplo6 {
+    border-style: double;
+}
+
+.bordes_styleEjemplo7 {
+    border-style: groove;
+}
+
+.bordes_styleEjemplo8 {
+    border-style: ridge;
+}
+
+.bordes_styleEjemplo9 {
+    border-style: inset;
+}
+
+.bordes_styleEjemplo10 {
+    border-style: outset;
+}
+
+.bordes_styleEjemplo11 {
+    border-color: red;
+    border-style: groove;
+}
+
+.bordes_styleEjemplo12 {
+    border-color: blue;
+    border-style: inset;
+}
