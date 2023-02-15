@@ -1,10 +1,25 @@
 /* Creado por Francisco José Gómez Ruiz y Andrés Castillero Moriana */
 
-
-.bordes_color {
-    border-color: #000000;
+/** border_color **/
+[class^=bordes_color] {
+    border: 5px solid;
+    margin-left: 1%;
+    padding: 1%;
 }
 
+.bordes_colorEjemplo1 {
+    border-color: #92a8d1;
+}
+
+.bordes_colorEjemplo2 {
+    border-color: rgb(201, 76, 76);
+}
+
+.bordes_colorEjemplo3 {
+    border-color: hsla(89, 43%, 51%, 0.3);
+}
+
+/** border_radius **/
 /* Engloba todo el ejemplo */
 .bordes_radius{
     display: flex;

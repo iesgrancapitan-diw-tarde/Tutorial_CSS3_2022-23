@@ -22,9 +22,10 @@
         <h1><a href="index.html">TUTORIAL CSS3 - 2020/2021</a></h1>
         <h2><img src="icon/language-css3.svg"></h2>
     </header>
+
     <nav>
         <ul>
-            <li><a href="Bordes.html">Bordes</a></li>
+            <li><a href="#">Bordes</a></li>
             <li><a href="Fondos.html">Fondos</a></li>
             <li><a href="Efectos_texto.html">Fuentes y Ef Texto</a></li>
             <li><a href="Transformaciones.html">Transformac.</a></li>
@@ -37,6 +38,7 @@
 
         </ul>
     </nav>
+
     <main>
         <div>
             <h2>TUTORIAL CSS3 - Bordes</h2>
@@ -45,22 +47,55 @@
 
         <section>
             <article>
+                <h3>border-color</h3>
+                <p>Define el color de los 4 bordes de un elemento.</p>
+                <h4>Sintaxis</h4>
+                <pre
+                    class="line-numbers"><code class="language-css">border-color: color|transparent|initial|inherit;</code></pre>
+                <p>Admite los siguientes valores: </p>
+                <ul>
+                    <li><span>Color:</span> puede ser en RGB o con el nombre del color. Se pueden pasar hasta cuatro
+                        valores de colores.</li>
+                    <li><span>Transparente:</span> No aparece pero ocupa sitio.</li>
+                </ul>
+                <h4>Ejemplos:</h4>
+                <pre class="line-numbers"><code class="language-css">border: 5px solid;
+border-color: #92a8d1;
+border-color: rgb(201, 76, 76);
+border-color: hsla(89, 43%, 51%, 0.3);</code></pre>
+                <div class="bordes_radius">
+                    <div class="bordes_colorEjemplo1">Ejemplo 1</div>
+                    <div class="bordes_colorEjemplo2">Ejemplo 2</div>
+                    <div class="bordes_colorEjemplo3">Ejemplo 3</div>
+                </div>
+                <p>También existen las propiedades <a
+                        href="https://developer.mozilla.org/en-US/docs/Web/CSS/border-top-color"
+                        target="_blank"><code>border-top-color</code></a>, <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/border-right-color"
+                        target="_blank"><code>border-right-color</code></a>, <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/border-bottom-color"
+                        target="_blank"><code>border-bottom-color</code></a> y <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/border-left-color"
+                        target="_blank"><code>border-left-color</code></a> que permiten definir el color de cada uno de los lados del borde individualmente.</p>
+            </article>
+
+            <article>
                 <h3>border-radius</h3>
                 <p>Indica que el tamaño del borde redondeado.</p>
                 <h4>Sintaxis</h4>
                 <pre
-                    class="line-numbers"><code class="language-css">
-border-radius: 1-4 length|% / 1-4 length|%|initial|inherit;</code></pre>
+                    class="line-numbers"><code class="language-css">border-radius: 1-4 length|% / 1-4 length|%|initial|inherit;</code></pre>
                 <p>Admite de uno a cuatro valores, que son los siguientes: </p>
                 <ul>
-                    <li>Un valor: Se aplica a los cuatros lados.</li>
-                    <li>Dos valores. Se aplica el primero a arriba y abajo y el segundo a derecha e izquierda.</li>
-                    <li>Tres valores: se aplica el <span>primero</span> a arriba,el segundo a derecha e izquierda y el tercero a abajo.</li>
-                    <li>Cuatro valores: se aplica el primero a arriba, el segundo a la derecha, el tercero abajo y el cuarto a la izquierda.</li>
+                    <li><span>Un valor:</span> Se aplica a los cuatros lados.</li>
+                    <li><span>Dos valores:</span> Se aplica el primero a arriba y abajo y el segundo a derecha e
+                        izquierda.</li>
+                    <li><span>Tres valores:</span> se aplica el <span>primero</span> a arriba, el segundo a derecha e
+                        izquierda y el
+                        tercero a abajo.</li>
+                    <li><span>Cuatro valores:</span> se aplica el primero a arriba, el segundo a la derecha, el tercero
+                        abajo y el
+                        cuarto a la izquierda.</li>
                 </ul>
                 <h4>Ejemplos:</h4>
-                <pre class="line-numbers"><code class="language-css">
-border-radius: 20px 5px 20px 5px;
+                <pre class="line-numbers"><code class="language-css">border-radius: 20px 5px 20px 5px;
 border-radius: 2em/5em;</code></pre>
                 Aquí el resultado del ejemplo del código fuente indicado arriba.
                 <div class="bordes_radius">
@@ -68,9 +103,9 @@ border-radius: 2em/5em;</code></pre>
                     <div class="bordes_radiusEjemplo2"></div>
                 </div>
             </article>
-
         </section>
     </main>
+
     <footer>
         <div>Andrés Castillero Moriana y Francisco José Gómez Ruiz</div>
         <a href="https://github.com/a19camoan" class="social"><img src="icon/github.svg" alt="GitHub"></a>
