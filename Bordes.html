@@ -225,6 +225,28 @@ border-width: medium 1.25ex thin 2cm;
                     class="line-numbers"><code class="language-css">border-image-slice: [number]|[%]|fill|initial|inherit;</code></pre>
                 <h4>Diagrama:</h4>
                 <img src="https://developer.mozilla.org/en-US/docs/Web/CSS/border-image-slice/border-image-slice.png" alt="diagrama slice">
+                <ul>
+                    <li><span>Las zonas 1 a 4 son zonas de esquina.</span> Cada uno se usa una sola vez para formar las
+                        esquinas de la imagen del borde final.</li>
+                    <li><span>Las zonas 5 a 8 son zonas de borde.</span> Estos se repiten, escalan o modifican en la imagen del
+                        borde final para que coincidan con las medidas del elemento.</li>
+                    <li><span>La zona 9 es la zona media.</span> Es descartada de forma predeterminada, pero se utiliza como una
+                        imagen de fondo si fill se establece como la palabra clave.</li>
+                </ul>
+                <p>Es importante saber que esta propiedad puede especificarse utilizando de uno
+                    a cuatro valores para representar la posición de cada segmento de imagen. Los valores
+                    negativos no son válidos; los valores mayores que su dimensión correspondiente se sujetan 100%.
+                </p>
+                <ul>
+                    <li>Cuando se especifica una posición, crea cuatro cortes a la misma distancia de sus
+                        respectivos lados.</li>
+                    <li>Cuando se especifican dos posiciones, el primer valor crea cortes desde la parte
+                        superior e inferior, el segundo crea cortes desde la izquierda y la derecha.</li>
+                    <li>Cuando se especifican tres posiciones, el primer valor crea un corte desde arriba, el
+                        segundo crea cortes desde la izquierda y la derecha , el tercero crea un corte desde abajo.</li>
+                    <li>Cuando se especifican cuatro posiciones, crean cortes desde la parte superior, derecha,
+                        inferior e izquierda en ese orden (en sentido horario).</li>
+                </ul>
                 <h4>Ejemplos:</h4>
                 <pre class="line-numbers"><code class="language-css">border-image-slice: 30;
 border-image-slice: 30%;
