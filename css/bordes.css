@@ -144,3 +144,22 @@
 .bordes_image_sliceEjemplo3 {
     border-image-slice: fill;
 }
+
+/** border-image-outset **/
+[class^=bordes_image_outset] {
+    border: 35px solid;
+    border-image-source: url("https://www.w3schools.com/css/img_tree.png");
+    margin: 10% 0 10% 10%;
+}
+
+.bordes_image_outsetEjemplo1 {
+    border-image-outset: 0;
+}
+
+.bordes_image_outsetEjemplo2 {
+    border-image-outset: 25px;
+}
+
+.bordes_image_outsetEjemplo3 {
+    border-image-outset: 2em;
+}
