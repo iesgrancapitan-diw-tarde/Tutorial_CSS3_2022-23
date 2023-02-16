@@ -126,3 +126,21 @@
     border: 35px solid;
     border-image-source: url("https://www.w3schools.com/css/img_tree.png");
 }
+
+/** border-image-slice **/
+[class^=bordes_image_slice] {
+    border: 35px solid;
+    border-image-source: url("https://www.w3schools.com/css/img_tree.png");
+}
+
+.bordes_image_sliceEjemplo1 {
+    border-image-slice: 30;
+}
+
+.bordes_image_sliceEjemplo2 {
+    border-image-slice: 30%;
+}
+
+.bordes_image_sliceEjemplo3 {
+    border-image-slice: fill;
+}

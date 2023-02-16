@@ -213,6 +213,28 @@ border-width: medium 1.25ex thin 2cm;
                     <div class="bordes_image_sourceEjemplo">Ejemplo de borde con imagen</div>
                 </div>
             </article>
+
+            <article>
+                <h3>border-image-slice</h3>
+                <p>Esta propiedad indica cómo se corta una imagen especificada por border-image-source. El proceso de
+                    corte crea nueve zonas en total: cuatro esquinas, cuatro bordes y una zona central. Cuatro
+                    líneas de corte, a una distancia determinada de sus respectivos lados, controlan el
+                    tamaño de las zonas.</p>
+                <h4>Sintaxis</h4>
+                <pre
+                    class="line-numbers"><code class="language-css">border-image-slice: [number]|[%]|fill|initial|inherit;</code></pre>
+                <h4>Diagrama:</h4>
+                <img src="https://developer.mozilla.org/en-US/docs/Web/CSS/border-image-slice/border-image-slice.png" alt="diagrama slice">
+                <h4>Ejemplos:</h4>
+                <pre class="line-numbers"><code class="language-css">border-image-slice: 30;
+border-image-slice: 30%;
+border-image-slice: fill;</code></pre>
+                <div class="bordes_radius">
+                    <div class="bordes_image_sliceEjemplo1">Ejemplo de slice con píxels.</div>
+                    <div class="bordes_image_sliceEjemplo2">Ejemplo de slice con %</div>
+                    <div class="bordes_image_sliceEjemplo3">Ejemplo de slice con fill</div>
+                </div>
+            </article>
         </section>
     </main>
 
