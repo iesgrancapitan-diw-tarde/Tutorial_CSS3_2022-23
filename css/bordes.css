@@ -164,7 +164,7 @@
     border-image-outset: 2em;
 }
 
-/** Border-image-repeat **/
+/** Border Image Repeat **/
 
 [class^=bordes_ImgRepeat]{
     width: 300px;
@@ -197,7 +197,7 @@
     border-image-repeat: space;
 }
 
-/** Bordes imagenes width **/
+/** Border Image Width **/
 
 [class^=bordes_borderImageWidth]{
 	border: 10px solid transparent;
@@ -221,3 +221,53 @@
 .bordes_borderImageWidth4 {
 	border-image-width: 2em 3em 1em 2em;
 }
+
+/** Border Image**/
+
+[class^=bordes_borderImageExample]{
+    border: 10px solid transparent;
+    padding: 15px;
+    border-width: 10px;
+    border-style: solid;
+}
+
+.bordes_borderImageExample {
+	border-image: url("https://www.w3schools.com/css/img_tree.png") 15 15 round;
+}
+
+.bordes_borderImageExample2 {
+	border-image: url("https://www.w3schools.com/css/img_tree.png") 15 15 stretch;
+}
+
+.bordes_borderImageExample3 {
+	border-image: url("https://www.w3schools.com/css/img_tree.png") 15 15 repeat;
+}
+
+.bordes_borderImageExample4 {
+	border-image: url("https://www.w3schools.com/css/img_tree.png") 15 / 15 round;
+}
+
+.bordes_borderImageExample5 {
+	border-image: url("https://www.w3schools.com/css/img_tree.png") 30 fill / 5 / 5 space;
+}
+
+/** Border **/
+
+[class^=bordes_caja]{
+    display: flex;
+    justify-content: left;
+    width: 300px;
+    height: 80px;
+    margin:10px;
+}
+
+.bordes_caja1Border{
+	background-color: red;
+    border: 5px solid yellow;
+}
+  
+.bordes_caja2Border{
+	background-color: red;
+    border:5px dashed yellow;
+}
+  

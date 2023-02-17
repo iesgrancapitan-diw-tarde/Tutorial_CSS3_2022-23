@@ -357,6 +357,72 @@ border-image-width: 2em 3em 1em 2em;</code></pre>
                         <p class="bordes_borderImageWidth4">Border Image Width</p>
                     </div>
             </article>
+
+            <article>
+                <h3>Border-image</h3>
+                <p>La propiedad border-image permite especificar una imagen que se usará como borde
+                    alrededor de un elemento, se trata de una propiedad shorthand, que permite establecer
+                    simultáneamente el valor de varias propiedades diferentes como hemos ido viendo en los ejemplos</p>
+                <p>La propiedad consta de tres partes: </p>
+                <ul>
+                    <li><span>La imagen que se usará como borde</span></li>
+                    <li><span>Donde cortar la imagen</span></li>
+                    <li><span>Definir si las secciones intermedias se deben repetir o estirar</span></li>
+                </ul>
+                <p>Es muy importante señalar que para que border_image funcione, el elemento tambien necesita todo
+                    el conjunto de propiedades de border</p>
+                <h4>Sintaxis</h4>
+                <pre
+                    class="line-numbers"><code class="language-css">border-image: source slice width outset repeat|initial|inherit;</code></pre>
+                <h4>Ejemplos:</h4>
+                <pre class="line-numbers"><code class="language-css">border-image: url("https://www.w3schools.com/css/img_tree.png") 15 15 round;</code></pre>
+                <div>
+                    <p class="bordes_borderImageExample">Ejemplo border-image</p>
+                </div>
+                <pre class="line-numbers"><code class="language-css">border-image: url("https://www.w3schools.com/css/img_tree.png") 15 15 stretch;</code></pre>
+                <div>
+                    <p class="bordes_borderImageExample2">Ejemplo border-image</p>
+                </div>
+                <pre
+                    class="line-numbers"><code class="language-css">border-image: url("https://www.w3schools.com/css/img_tree.png") 15 15 repeat;</code></pre>
+                <div>
+                    <p class="bordes_borderImageExample3">Ejemplo border-image</p>
+                </div>
+                <pre class="line-numbers"><code class="language-css">border-image: url("https://www.w3schools.com/css/img_tree.png") 15 / 15 round;</code></pre>
+                    <br>
+                <div>
+                    <p class="bordes_borderImageExample4">Ejemplo border-image</p>
+                </div>
+                <br>
+                <pre
+                    class="line-numbers"><code class="language-css">border-image: url("https://www.w3schools.com/css/img_tree.png") 30 fill / 5 / 5 space;</code></pre>
+                    <br>
+                <div>
+                    <p class="bordes_borderImageExample5">Ejemplo border-image</p>
+                </div>
+            </article>
+
+            <article>
+                <h3>Border</h3>
+                <p>Esta es una propiedad abrevivada de css.</p>
+                <h4>Sintaxis</h4>
+                <pre class="line-numbers"><code class="language-css">border: [border-width || border-style || border-color | inherit] ;</code></pre>
+                <p>Las propiedades abreviadas son: </p>
+                <ul>
+                    <li><span>border-color</span></li>
+                    <li><span>border-style</span></li>
+                    <li><span>border-width</span></li>
+                </ul>            
+                <h4>Ejemplos:</h4>
+                <pre class="line-numbers"><code class="language-css">border: 5px solid yellow;
+border:5px dashed yellow;</code></pre>
+                <div class="bordes_cajasBorder">
+                    <div class="bordes_caja1Border">
+                    </div>
+                    <div class="bordes_caja2Border">
+                    </div>
+                </div>
+            </article>
         </section>
     </main>
 
