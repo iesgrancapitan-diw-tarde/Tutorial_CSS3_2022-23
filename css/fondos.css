@@ -1,0 +1,155 @@
+/* Background */
+.background {
+    background: url("../img/fondos-windows.jpeg") 10% 85%/350px no-repeat fixed, url("../img/fondos-windows2.jpg") 90% 85%/350px no-repeat fixed;
+    height: 500px;
+}
+
+.background1 {
+	height: 500px;
+	background: yellow;
+}
+
+.background2 {
+	height: 500px;
+	background: url("../img/fondos-windows.jpeg") repeat-y;
+}
+
+.background3 {
+	height: 500px;
+	background: border-box blue;
+}
+
+.background4 {
+	height: 500px;
+	background: no-repeat center/80% url("../img/fondos-windows.jpeg");
+}
+
+/* background-color */
+.fondos-color {
+	height: 100px;
+	margin-top: 10px;
+	border: solid black 2px;
+	margin-bottom: 10px;
+	background-color: chocolate;
+}
+
+.fondos-hexa {
+	height: 100px;
+	margin-top: 10px;
+	border: solid black 2px;
+	margin-bottom: 10px;
+	background-color: #123456;
+}
+
+.fondos-rgb {
+	height: 100px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	border: solid black 2px;
+	background-color: rgb(100, 10, 100);
+}
+
+.fondos-rgba {
+	height: 100px;
+	margin-top: 10px;
+	border: solid black 2px;
+	margin-bottom: 10px;
+	background-color: rgba(100, 10, 100, 0.5);
+}
+
+.fondos-hsl {
+	height: 100px;
+	border: solid black 2px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	background-color: hsl(50, 85%, 25%);
+}
+
+.fondos-hsla {
+	height: 100px;
+	border: solid black 2px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	background-color: hsla(50, 85%, 25%, 0.5);
+}
+
+.fondos-transparente {
+	height: 100px;
+	border: solid black 2px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	background-color: transparent;
+}
+
+/*backgraung-image*/
+.fondo {
+	border: solid black 2px;
+	background-image: url(../img/fondos-ciudad.jpg);
+	height: 400px;
+	width: 1000px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	background-repeat: no-repeat, repeat;
+}
+
+.fondo-img {
+	height: 500px;
+    background-image: url(../img/fondos-pajaro.png), url(../img/fondos-pajaro.png), url(../img/fondos-pajaro.png), url(../img/fondos-pajaro.png), url(../img/fondos-pajaro.png), url(../img/fondos-windows.jpeg);
+    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
+    background-position: 10% 10%, 90% 70%, 40% 20%, 20% 80%, 75% 12%;
+    background-size: 150px, 150px, 150px, 90px, 100px, 100%;
+}
+
+/* background-size */
+.background-size1 {
+    padding: 200px;
+    border: 5px solid;
+    background-image: url("../img/fondos-windows.jpeg");
+    background-size: auto;
+}
+
+.background-size2 {
+    padding: 200px;
+    border: 5px solid;
+	background-image: url("../img/fondos-windows.jpeg");
+    background-size: 100px 1000px;
+}
+
+.background-size3 {
+    padding: 200px;
+    border: 5px solid;
+    background-image: url("../img/fondos-windows.jpeg");
+    background-size: contain;
+}
+
+.background-size4 {
+    padding: 200px;
+    border: 5px solid;
+	background-image: url("../img/fondos-windows.jpeg");
+    background-size: cover;
+}
+
+/* fondos-repeat */
+.fondos-repeat{
+    padding: 5%;
+    border: 2px solid #000000;
+    background-image: url('../img/fondos-pajaro.png');
+    background-size: 150px;
+    background-repeat: repeat-x;
+}
+
+.fondos-repeat1{
+    padding: 5%;
+    border: 2px solid;
+    background-image: url('../img/fondos-pajaro.png');
+    background-size: 100px;
+    background-repeat: round;
+}
+
+.fondos-repeat2 {
+    padding: 10%;
+    border: 2px solid;
+    background-image: url('../img/fondos-pajaro.png');
+    background-size: 100px;
+    background-repeat: repeat-y;
+}
