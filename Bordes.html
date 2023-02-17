@@ -275,6 +275,88 @@ border-image-outset: 2em;</code></pre>
                     <div class="bordes_image_outsetEjemplo3">Ejemplo de outset 3</div>
                 </div>
             </article>
+                        
+            <article>
+                <h3>Border-image-repeat</h3>
+                <p>define cómo se manejará la parte media de una imagen de borde para que coincida con el tamaño del borde. Tiene sintaxis de un valor, el cual describe el comportamiento de todos los lados, y otra sintaxis de dos valores, que establece diferentes valores para el comportamiento horizontal y vertical. Necesita una url la imagen, para eso se usa border-image-source</p>
+                <h4>Sintaxis</h4>
+                <pre class="line-numbers"><code class="language-css">border-image-repeat: stretch|repeat|round|space|initial|inherit;</code></pre>
+                <p>Las valores que toman son: </p>
+                <ul>
+                    <li><span>Strecht:</span> Estira la imagen para rellenar todo el borde</li>
+                    <li><span>Repeat:</span> repite la imagen para rellenar el borde</li>
+                    <li><span>Round:</span> Repite la imagen para rellenar el borde y si no se puede se estira</li>
+                    <li><span>Space:</span> Repite la imagen para rellenar el área del borde y si no se puede, el espacio extra se distribuye alrededor de las imágenes</li>
+                </ul>            
+                <h4>Ejemplos:</h4>
+                <pre class="line-numbers"><code class="language-css">border:10px solid;
+border-image-source: url("https://www.w3schools.com/css/img_tree.png") ;
+border-image-repeat: space;
+border-image-source: url("https://www.w3schools.com/css/img_tree.png") ;
+border-image-repeat: repeat
+border-image-source: url("https://www.w3schools.com/css/img_tree.png") ;
+border-image-repeat: round;
+border-image-source: url("https://www.w3schools.com/css/img_tree.png") ;
+border-image-repeat: space;
+    </code></pre>
+                <div class="bordes_radius">
+                    <div class="bordes_ImgRepeat1">
+                    </div>
+                    <div class="bordes_ImgRepeat2">
+                    </div>
+                    <div class="bordes_ImgRepeat3">
+                    </div>
+                    <div class="bordes_ImgRepeat4">
+                    </div>
+                </div>
+            </article>
+
+            <article>
+                <h3>Border-image-width</h3>
+                <p>Permite utilizar una imágen para definir los bordes de los elementos.
+                   Es muy importante tener en cuenta el valor dado por la sentencia border-image-source, que se puede establecer
+                   ya sea por la propiedad border-image-source o la abreviatura border-image, en caso de que su valor sea nulo (none),
+                   o si la imágen no se puede visualizar, se utilizarán los estilos de borde.
+                </p>
+                
+                <h4>Sintaxis</h4>
+                    <pre class="line-numbers"><code class="language-css">border-image-width: number|%|auto|initial|inherit;</code></pre>
+                    <h4>Ejemplo:</h4>
+                    <ul>
+                        <li><b>Un valor:</b><span>solo aparece una sola medida de tamaño de borde para los 4 lados</span></li>
+                    </ul>
+                    <pre class="line-numbers"><code class="language-css">border-image-source: url("https://www.w3schools.com/css/img_tree.png");
+border-image-width: 2em;</code></pre>
+                    <div>
+                        <p class="bordes_borderImageWidth1">Border Image Width</p>
+                    </div>
+                    <ul>
+                        <li><b>dos valores:</b> <span>aparecen dos medidas de borde para el lado horizontal y vertical</span></li>
+                    </ul>
+                    <pre class="line-numbers"><code class="language-css">border-image-source: url("https://www.w3schools.com/css/img_tree.png");
+border-image-width: 2em 3em;</code></pre>
+                    <div>
+                        <p class="bordes_borderImageWidth2">Border Image Width</p>
+                    </div>
+                    <ul>
+                        <li><b>tres valores:</b> <span>aparecen tres medidas de tamaño para la parte superior, horizontal e
+                            inferior</span></li>
+                    </ul>
+                    <pre class="line-numbers"><code class="language-css">border-image-source: url("https://www.w3schools.com/css/img_tree.png");
+border-image-width: 2em 3em 1em;</code></pre>
+                    <div>
+                        <p class="bordes_borderImageWidth3">Border Image Width</p>
+                    </div>
+                    <ul>
+                        <li><b>cuatro valores:</b> <span>aparecen cuatro medidas de tamaño para los cuatro lados del borde.</span>
+                        </li>
+                    </ul>
+                    <pre class="line-numbers"><code class="language-css">border-image-source: url("https://www.w3schools.com/css/img_tree.png");
+border-image-width: 2em 3em 1em 2em;</code></pre>
+                    <div>
+                        <p class="bordes_borderImageWidth4">Border Image Width</p>
+                    </div>
+            </article>
         </section>
     </main>
 

@@ -163,3 +163,61 @@
 .bordes_image_outsetEjemplo3 {
     border-image-outset: 2em;
 }
+
+/** Border-image-repeat **/
+
+[class^=bordes_ImgRepeat]{
+    width: 300px;
+	height:50px;
+	background-color: black;
+	border:10px solid;
+    margin:10px;
+    padding: 15px;
+    border-image-slice: 30;
+    border-image-width: 10px;
+}
+
+
+.bordes_ImgRepeat1{
+    border-image-source: url("https://www.w3schools.com/css/img_tree.png");
+    border-image-repeat: stretch;
+}
+  
+.bordes_ImgRepeat2{
+	border-image-source: url("https://www.w3schools.com/css/img_tree.png");
+    border-image-repeat: repeat;
+}
+  
+.bordes_ImgRepeat3{
+	border-image-source: url("https://www.w3schools.com/css/img_tree.png");
+    border-image-repeat: round;
+}
+.bordes_ImgRepeat4{
+	border-image-source: url("https://www.w3schools.com/css/img_tree.png") ;
+    border-image-repeat: space;
+}
+
+/** Bordes imagenes width **/
+
+[class^=bordes_borderImageWidth]{
+	border: 10px solid transparent;
+	padding: 15px;
+	border-image-source: url("https://www.w3schools.com/css/img_tree.png");
+	border-image-repeat: round;
+}
+
+.bordes_borderImageWidth1 {
+	border-image-width: 2em;
+}
+
+.bordes_borderImageWidth2 {
+	border-image-width: 2em 3em;
+}
+
+.bordes_borderImageWidth3 {
+	border-image-width: 2em 3em 1em;
+}
+
+.bordes_borderImageWidth4 {
+	border-image-width: 2em 3em 1em 2em;
+}
