@@ -35,16 +35,46 @@ ul.prueba_nth>li:nth-child(2) {
     color: blue;
 }
 
-.prueba_after::after {
-    content: "♥";
-    color:red;
+ul.prueba_nth_last>li:nth-last-child(2) {
+    color: blue;
 }
 
-.prueba_before{
-    text-decoration: none;
-}
-
-.prueba_before::before{
-    content: "→ ";
+ul.prueba_only_child>li:only-child {
     color: red;
+}
+
+ul.prueba_first_of_type>li:first-of-type {
+    color: red;
+}
+
+ul.prueba_last_of_type>li:last-of-type {
+    color: red;
+}
+
+div.prueba_only_of_type>button:only-of-type {
+    color: red;
+}
+
+p.prueba_after:after {
+    content: " - Texto añadido";
+    color: green;
+}
+
+p.prueba_before:before {
+    content: "Texto añadido - ";
+    color: green;
+}
+
+p.prueba_first_letter:first-letter {
+    color: red;
+    font-size: 2em;
+}
+
+p.prueba_first_line:first-line {
+    color: red;
+}
+
+p.prueba_selection::selection {
+    background-color: red;
+    color: white;
 }
