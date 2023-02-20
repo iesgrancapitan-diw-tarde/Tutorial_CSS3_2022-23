@@ -60,16 +60,372 @@
                 </ul>
                 <h4>Ejemplos:</h4>
                 <pre class="line-numbers"><code class="language-css">p {
-color: rgb(255, 0, 0);
-color: rgba(255, 0, 0, 0.5);
-color: hsl(0, 100%, 50%);
-color: hsla(0, 100%, 50%, 0.5);
-color: #ff0000;
-color: red;
+    color: rgb(255, 0, 0);
+    color: rgba(255, 0, 0, 0.5);
+    color: hsl(0, 100%, 50%);
+    color: hsla(0, 100%, 50%, 0.5);
+    color: #ff0000;
+    color: red;
 }</code>
                 </pre>
                 <p>Las formas de rgba y hsla admiten el valor alpha, que indica la transparencia del color. El valor alpha puede ser un número entre 0 y 1, o un porcentaje entre 0% y 100%.</p>
             </article>
+            <article>
+                <h3>font-family</h3>
+                <p> Esta propiedad indica al navegador el tipo de letra que debe aplicar a los elementos seleccionados. El navegador solo aplica el tipo de letra si la máquina que accede al sitio web dispone de ella; en caso contrario, simplemente usa el tipo de letra que tiene definido por defecto <span>(default font)</span>.</p>
+                <h4>Sintaxis</h4>
+                <pre
+                    class="line-numbers"><code class="language-css">font-family: [Aqui va la sintaxis de cada propiedad];</code></pre>
+                <p>Los tipos de letra seguros para la web: </p>
+                <ul>
+                    <li>Arial -> sans-serif</li>
+                    <li>Courier New -> monospace</li>
+                    <li>Georgia -> serif</li>
+                    <li>Times New Roman -> serif</li>
+                    <li>Trebuchet MS -> sans-serif</li>
+                    <li>Verdana -> sans-serif</li>
+                </ul>
+                <h4>Ejemplos:</h4>
+                <pre class="line-numbers"><code class="language-css">p {
+    font-family: Arial;
+}</code>
+                </pre>
+                <p>CSS define cinco nombres genéricos para los tipos de letra serif, sans-serif, monospace, cursive y fantasy.</p>
+                <table>
+                    <tr>
+                        <th>Nombre genérico</th>
+                        <th>Descripción</th>
+                    </tr>
+                    <tr>
+                        <td>serif</td>
+                        <td>El tipo de letra tiene serifa (una pequeña línea que sobresale del borde de cada letra). Los tipos de letra serif son más tradicionales y se utilizan en documentos impresos.</td>
+                    </tr>
+                    <tr>
+                        <td>sans-serif</td>
+                        <td>El tipo de letra no tiene serifa. Los tipos de letra sans-serif son más modernos y se utilizan en documentos web.</td>
+                    </tr>
+                    <tr>
+                        <td>monospace</td>
+                        <td>El tipo de letra tiene todos los caracteres con el mismo ancho. Los tipos de letra monospace se utilizan para mostrar texto de código fuente.</td>
+                    </tr>
+                    <tr>
+                        <td>cursive</td>
+                        <td>El tipo de letra se basa en una fuente de caligrafía. Los tipos de letra cursive se utilizan para mostrar texto de caligrafía.</td>
+                    </tr>
+                    <tr>
+                        <td>fantasy</td>
+                        <td>El tipo de letra se basa en una fuente decorativa. Los tipos de letra fantasy se utilizan para mostrar texto decorativo.</td>
+                    </tr>
+                </table>
+            </article>
+            <article>
+                <h3>font-size</h3>
+                <p>Establece el tamaño de la fuente.</p>
+                <h4>Sintaxis</h4>
+                <pre
+                    class="line-numbers"><code class="language-css">font-size: [Aqui va la sintaxis de cada propiedad];</code></pre>
+                <p>El tamaño se puede escoger de distintas maneras: </p>
+                <ul>
+                    <li>Píxeles</li>
+                    <li>Ccsme</li>
+                    <li>Rems</li>
+                    <li>Ex</li>
+                    <li>%</li>
+                </ul>
+                <h4>Ejemplos:</h4>
+                <pre class="line-numbers"><code class="language-css">p {
+    font-size: 8px;
+    font-size: 7em;
+    font-size: 6rem;
+    font-size: 5ex;
+    font-size: 4%;
+}</code>
+                </pre>
+                <p>La unidad rem es igual al tamaño de fuente del elemento raíz en cambio em es igual al tamaño de fuente actual del elemento en el que se aplica.</p>
+            </article>
+            <article>
+                <h3>font-style</h3>
+                <p>Se usa para activar y desactivar el texto en cursiva.</p>
+                <h4>Sintaxis</h4>
+                <pre
+                    class="line-numbers"><code class="language-css">font-style: [Aqui va la sintaxis de cada propiedad];</code></pre>
+                <p>Los valores posibles son los siguientes: </p>
+                <ul>
+                    <li>normal - Pone el texto en tipo de letra normal <span>(desactiva la cursiva)</span>.</li>
+                    <li>italic - Pone el texto en la versión cursiva del tipo de letra, si está disponible; si no está disponible, simulará cursiva con el modo oblique en su lugar.</li>
+                    <li>oblique - Pone el texto en una versión de tipo de letra cursiva simulada, que se genera inclinando la versión normal.</li>
+                </ul>
+                <h4>Ejemplos:</h4>
+                <pre class="line-numbers"><code class="language-css">p {
+    font-style: normal;
+    font-style: italic;
+    font-style: oblique;
+}</code>
+                </pre>
+            </article>
+            <article>
+                <h3>font-weight</h3>
+                <p>Establece la negrita de la fuente.</p>
+                <h4>Sintaxis</h4>
+                <pre
+                    class="line-numbers"><code class="language-css">font-weight: [Aqui va la sintaxis de cada propiedad];</code></pre>
+                <p>La negrita se puede escoger de distintas maneras: </p>
+                <ul>
+                    <li>normal</li>
+                    <li>bold</li>
+                    <li>lighter</li>
+                    <li>bolder</li>
+                    <li>variables numericos</li>
+                </ul>
+                <h4>Ejemplos:</h4>
+                <pre class="line-numbers"><code class="language-css">p {
+    font-weight: normal;
+    font-weight: bold;
+    font-weigth: lighter;
+    font-weigth: bolder;
+    font-weigth: 500;
+}</code>
+                </pre>
+                <p>El valor numerico 400 corresponde a font-weigth: normal; y el valor numerico 700 corresponde a font-weight: bold;</p>
+            </article>
+            <article>
+                <h3>font-stretch</h3>
+                <p>Modifica el ancho de la fuente.</p>
+                <h4>Sintaxis</h4>
+                <pre
+                    class="line-numbers"><code class="language-css">font-stretch: [Aqui va la sintaxis de cada propiedad];</code></pre>
+                <p>El ancho de la letra puede tomar los siguientes valores: </p>
+                <ul>
+                    <li>condensed</li>
+                    <li>expanded</li>
+                    <li>ultra-expanded</li>
+                    <li>variables numericos %</li>
+                </ul>
+                <h4>Ejemplos:</h4>
+                <pre class="line-numbers"><code class="language-css">p {
+    font-stretch: condensed;
+    font-stretch: expanded;
+    font-stretch: ultra-expanded;
+    font-stretch: 100%;
+}</code>
+                </pre>
+                <p>Algunas fuentes de letra no permite esta propiedad</p>
+            </article>
+            <article>
+                <h3>font-style</h3>
+                <p>Se usa para activar y desactivar el texto en cursiva.</p>
+                <h4>Sintaxis</h4>
+                <pre
+                    class="line-numbers"><code class="language-css">font-style: [Aqui va la sintaxis de cada propiedad];</code></pre>
+                <p>Los valores posibles son los siguientes: </p>
+                <ul>
+                    <li>normal - Pone el texto en tipo de letra normal <span>(desactiva la cursiva)</span>.</li>
+                    <li>italic - Pone el texto en la versión cursiva del tipo de letra, si está disponible; si no está disponible, simulará cursiva con el modo oblique en su lugar.</li>
+                    <li>oblique - Pone el texto en una versión de tipo de letra cursiva simulada, que se genera inclinando la versión normal.</li>
+                </ul>
+                <h4>Ejemplos:</h4>
+                <pre class="line-numbers"><code class="language-css">p {
+    font-style: normal;
+    font-style: italic;
+    font-style: oblique;
+}</code>
+                </pre>
+            </article>
+            <article>
+                <h3>text-transform</h3>
+                <p>Te permite practicar algunas transformaciones sobre tu tipo de letra.</p>
+                <h4>Sintaxis</h4>
+                <pre
+                    class="line-numbers"><code class="language-css">text-transform: [Aqui va la sintaxis de cada propiedad];</code></pre>
+                <p>Los valores incluyen: </p>
+                <ul>
+                    <li>none - Impide cualquier transformación.</li>
+                    <li>uppercase - Transforma TODO EL TEXTO A MAYÚSCULAS.</li>
+                    <li>lowercase - Transforma todo el texto a minúsculas.</li>
+                    <li>capitalize - Transforma Las Letras Iniciales De Cada Palabra A Mayúscula.</li>
+                    <li>full-width - Transforma todos los caracteres para cada uno quede dentro de una caja de ancho fijo, similar a una fuente monoespaciada, lo que permite, por ejemplo, la alineación de caracteres latinos junto con caracteres asiáticos (chino, japonés, coreano.)</li>
+                </ul>
+                <h4>Ejemplos:</h4>
+                <pre class="line-numbers"><code class="language-css">p {
+    text-transform: none;
+    text-transform: uppercase;
+    text-transform: lowercase;
+    text-transform: capitalize;
+    text-transform: full-width;
+}</code>
+                </pre>
+            </article>
+            <article>
+                <h3>text-decoration</h3>
+                <p>Activa/desactiva decoraciones en los tipos de letra (usarás esto principalmente para desactivar el subrayado por defecto de los enlaces al aplicarles estilo).</p>
+                <h4>Sintaxis</h4>
+                <pre
+                    class="line-numbers"><code class="language-css">text-decoration: [Aqui va la sintaxis de cada propiedad];</code></pre>
+                <p>Los valores incluyen: </p>
+                <ul>
+                    <li>none - Desactiva cualquier decoración de texto que presente.</li>
+                    <li>underline - Subraya el texto.</li>
+                    <li>overline - Proporciona al texto una línea superpuesta.</li>
+                    <li>line-through - Coloca un tachado sobre el texto.</li>
+                </ul>
+                <h4>Ejemplos:</h4>
+                <pre class="line-numbers"><code class="language-css">p {
+    text-decoration: none;
+    text-decoration: underline;
+    text-decoration: overline;
+    text-decoration: line-through;
+}</code>
+                </pre>
+            </article>
+            <article>
+                <h3>text-shadow</h3>
+                <p>Aplica sombras a los textos, puede tomar hasta cuatro valores.</p>
+                <h4>Sintaxis</h4>
+                <pre
+                    class="line-numbers"><code class="language-css">text-shadow: [Aqui va la sintaxis de cada propiedad];</code></pre>
+                <p>Las cuatro propiedades son las siguientes: </p>
+                <ul>
+                    <li>El desplazamiento horizontal de la sombra desde el texto original; admite la mayoría de las unidades y magnitudes de que dispone CSS, pero lo más habitual es usar px. Es un valor obligatorio.</li>
+                    <li>El desplazamiento vertical de la sombra desde el texto original; se comporta básicamente igual que el desplazamiento horizontal, excepto porque mueve la sombra arriba/abajo, y no hacia derecha/izquierda. Es un valor obligatorio.</li>
+                    <li>El radio de desenfoque; cuanto más alto es este valor, mayor es la dispersión de la sombra. Si no se incluye este valor, el valor por defecto es 0, y no hay desenfoque. Esta propiedad admite la mayoría de las unidades y magnitudes de que dispone el CSS.</li>
+                    <li>El color de base de la sombra, que admite cualquier unidad de color de que dispone CSS. Si no se incluye este valor, el valor predeterminado es negro.</li>
+                </ul>
+                <h4>Ejemplo:</h4>
+                <pre class="line-numbers"><code class="language-css">p {
+    text-shadow: -1px -1px 1px #aaa;
+}</code>
+                                </pre>
+                <h4>Sombras Múltiples</h4>
+                <p>También puede agregar múlriples sombras.</p>
+                <h4>Ejemplos:</h4>
+                <pre class="line-numbers"><code class="language-css">p {
+    text-shadow: -1px -1px 1px #aaa,
+                  0px 4px 1px rgba(0,0,0,0.5),
+                  4px 4px 5px rgba(0,0,0,0.7),
+                  0px 0px 7px rgba(0,0,0,0.4);
+}</code>
+                </pre>
+            </article>
+
+            <article>
+                <h3>text-aling</h3>
+                <p>Esta propiedad css establece la alineación horizontal del contenido de nivel en línea dentro de un elemento de bloque o cuadro de celda de tabla.</p>
+                <h4>Sintaxis</h4>
+                <pre
+                    class="line-numbers"><code class="language-css">text-aling: [Aqui va la sintaxis de cada propiedad];</code></pre>
+                <p>Los valores incluyen: </p>
+                <ul>
+                    <li>left - Alinea el texto a la izquierda.</li>
+                    <li>right - Alinea el texto a la derecha.</li>
+                    <li>center - Alinea el texto al centro.</li>
+                    <li>justify - Estira las líneas para que cada línea tenga el mismo ancho.</li>
+                    <li>initial - Establece esta propiedad en su valor predeterminado.</li>
+                    <li>inherit - Hereda esta propiedad de su elemento padre.</li>
+
+                </ul>
+                <h4>Ejemplos:</h4>
+                <pre class="line-numbers"><code class="language-css">p {
+    text-aling: left;
+    text-aling: right;
+    text-aling: center;
+    text-aling: justify;
+    text-aling: initial;
+    text-aling: inherit;
+}</code>
+                </pre>
+            </article>
+            
+            <article>
+                <h3>line-height</h3>
+                <p>La propiedad CSS establece la altura de un cuadro de línea.</p>
+                <h4>Sintaxis</h4>
+                <pre
+                    class="line-numbers"><code class="language-css">line-height: [Aqui va la sintaxis de cada propiedad];</code></pre>
+                <p>Los valores incluyen: </p>
+                <ul>
+                    <li>normal.</li>
+                    <li>valores numéricos.</li>
+                    <li>em.</li>
+                    <li>porcentaje.</li>
+                    <li>pixel.</li>
+                </ul>
+                <h4>Ejemplos:</h4>
+                <pre class="line-numbers"><code class="language-css">p {
+    line-height: left;
+    line-height: 2.5;
+    line-height: 3em;
+    line-height: 120%;
+    line-height: 16px;
+}</code>
+                </pre>
+            </article>
+
+            <article>
+                <h3>font-variant</h3>
+                <p>La propiedad font-variant de CSS le permite establecer todas las variantes de fuente para una fuente.</p>
+                <h4>Sintaxis</h4>
+                <pre
+                    class="line-numbers"><code class="language-css">font-variant: [Aqui va la sintaxis de cada propiedad];</code></pre>
+                <p>Los valores globales son: </p>
+                <ul>
+                    <li>inherit.</li>
+                    <li>initial.</li>
+                    <li>revert.</li>
+                    <li>revert-layer.</li>
+                    <li>pixel.</li>
+                </ul>
+                <h4>Ejemplos:</h4>
+                <pre class="line-numbers"><code class="language-css">p {
+    font-variant: inherit;
+    font-variant: initial;
+    font-variant: revert;
+    font-variant: revert-layer;
+    font-variant: pixel;
+}</code>
+                </pre>
+            </article>
+
+            <article>
+                <h3>font-stretch</h3>
+                <p>La propiedad font-stretch selecciona una cara, condensada o expandida de una fuente.</p>
+                <h4>Sintaxis</h4>
+                <pre
+                    class="line-numbers"><code class="language-css">font-stretch: [Aqui va la sintaxis de cada propiedad];</code></pre>
+                <p>Keyword values: </p>
+                <ul>
+                    <li>ultra-condensed.</li>
+                    <li>condensed.</li>
+                    <li>normal.</li>
+                    <li>semi-expanded.</li>
+                    <li>expanded.</li>
+                    <li>ultra-expanded.</li>
+                </ul>
+                <p>Percentage values: </p>
+                <ul>
+                    <li>50%.</li>
+                    <li>100%.</li>
+                    <li>200%.</li>
+                </ul>
+                <p>Global values: </p>
+                <ul>
+                    <li>inherit.</li>
+                    <li>initial.</li>
+                    <li>revert.</li>
+                    <li>unset.</li>                    
+                </ul>
+    
+                <h4>Ejemplos:</h4>
+                <pre class="line-numbers"><code class="language-css">p {
+    font-variant: ultra-condensed;
+    font-variant: condensed;
+    font-variant: 50%;
+    font-variant: 200%;
+    font-variant: inherit;
+    font-variant: revert;
+    }</code>
+                </pre>
+            </article>
+
         </section>
     </main>
     <footer>
