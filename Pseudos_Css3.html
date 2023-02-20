@@ -209,9 +209,131 @@ a:active {
                 </ul>
             </article>
             <article>
+                <h3>:nth-last-child()</h3>
+                <p>
+                    La pseudoclase <span>:nth-last-child()</span> representa a un elemento que es el hijo n-ésimo de
+                    su elemento padre, contando desde el final.
+                </p>
+                <h4>Sintaxis</h4>
+                <pre class="line-numbers"><code class="language-css">elemento:nth-last-child(n) {
+    /* Definición de estilos */
+}</code></pre>
+                <h4>Ejemplo de uso</h4>
+                <pre class="line-numbers"><code class="language-css">ul > li:nth-last-child(2) {
+    color: blue;
+    </code></pre>
+                <p>El segundo elemento de la lista, empezando por el final, aparecerá en azul:</p>
+                <ul class="prueba_nth_last">
+                    <li>Primer elemento</li>
+                    <li>Segundo elemento</li>
+                    <li>Tercer elemento</li>
+                    <li>Cuarto elemento</li>
+                    <li>Quinto elemento</li>
+                </ul>
+            </article>
+            <article>
+                <h3>:only-child</h3>
+                <p>
+                    La pseudoclase <span>:only-child</span> representa a un elemento que es el único hijo de su
+                    elemento padre.
+                </p>
+                <h4>Sintaxis</h4>
+                <pre class="line-numbers"><code class="language-css">elemento:only-child {
+    /* Definición de estilos */
+}</code></pre>
+                <h4>Ejemplo de uso</h4>
+                <pre class="line-numbers"><code class="language-css">ul > li:only-child {
+    color: red;
+}</code></pre>
+                <p>
+                    El único elemento de la lista aparece en rojo:
+                </p>
+                <ul class="prueba_only_child">
+                    <li>Primer elemento</li>
+                </ul>
+            </article>
+            <article>
+                <h3>:first-of-type</h3>
+                <p>
+                    La pseudoclase <span>:first-of-type</span> representa a un elemento que es el primer elemento de
+                    su tipo entre los hijos de su elemento padre.
+                </p>
+                <h4>Sintaxis</h4>
+                <pre class="line-numbers"><code class="language-css">elemento:first-of-type {
+    /* Definición de estilos */
+}</code></pre>
+                <h4>Ejemplo de uso</h4>
+                <pre class="line-numbers"><code class="language-css">ul > li:first-of-type {
+    color: red;
+}</code></pre>
+                <p>
+                    El primer elemento de la lista aparece en rojo:
+                </p>
+                <ul class="prueba_first_of_type">
+                    <li>Primer elemento</li>
+                    <li>Segundo elemento</li>
+                    <li>Tercer elemento</li>
+                    <li>Primer elemento</li>
+                    <li>Segundo elemento</li>
+                    <li>Tercer elemento</li>
+                </ul>
+            </article>
+            <article>
+                <h3>:last-of-type</h3>
+                <p>
+                    La pseudoclase <span>:last-of-type</span> representa a un elemento que es el último elemento de
+                    su tipo entre los hijos de su elemento padre.
+                </p>
+                <h4>Sintaxis</h4>
+                <pre class="line-numbers"><code class="language-css">elemento:last-of-type {
+    /* Definición de estilos */
+}</code></pre>
+                <h4>Ejemplo de uso</h4>
+                <pre class="line-numbers"><code class="language-css">ul > li:last-of-type {
+    color: red;
+}</code></pre>
+                <p>
+                    El último elemento de la lista aparece en rojo:
+                </p>
+                <ul class="prueba_last_of_type">
+                    <li>Primer elemento</li>
+                    <li>Segundo elemento</li>
+                    <li>Tercer elemento</li>
+                    <li>Primer elemento</li>
+                    <li>Segundo elemento</li>
+                    <li>Tercer elemento</li>
+                </ul>
+            </article>
+            <article>
+                <h3>:only-of-type</h3>
+                <p>
+                    La pseudoclase <span>:only-of-type</span> representa a un elemento que es el único elemento de
+                    su tipo entre los hijos de su elemento padre.
+                </p>
+                <h4>Sintaxis</h4>
+                <pre class="line-numbers"><code class="language-css">elemento:only-of-type {
+    /* Definición de estilos */
+}</code></pre>
+                <h4>Ejemplo de uso</h4>
+                <pre class="line-numbers"><code class="language-css">ul > li:only-of-type {
+    color: red;
+}</code></pre>
+                <p>
+                    El único <code>button</code> aparece en rojo:
+                </p>
+                <div class="prueba_only_of_type">
+                    <input type="button" value="input">
+                    <input type="button" value="input">
+                    <button>button</button>
+                    <input type="button" value="input">
+                    <input type="button" value="input">
+                    <input type="button" value="input">
+                </div>
+            </article>
+            <article>
                 <h3>::after</h3>
                 <p>
-                    La pseudo-elemento <span>::after</span> representa un elemento que se inserta después del
+                    El pseudo-elemento <span>::after</span> representa un elemento que se inserta después del
                     contenido de su elemento padre.
                 </p>
                 <h4>Sintaxis</h4>
@@ -231,7 +353,7 @@ a:active {
             <article>
                 <h3>::before</h3>
                 <p>
-                    La pseudo-elemento <span>::before</span> representa un elemento que se inserta antes del
+                    El pseudo-elemento <span>::before</span> representa un elemento que se inserta antes del
                     contenido de su elemento padre.
                 </p>
                 <h4>Sintaxis</h4>
@@ -247,6 +369,67 @@ a:active {
                     El texto añadido aparece antes del contenido del elemento <span>p</span>:
                 </p>
                 <p class="prueba_before">Texto del elemento</p>
+            </article>
+            <article>
+                <h3>::first-letter</h3>
+                <p>
+                    El pseudo-elemento <span>::first-letter</span> representa a la primera letra de un elemento.
+                </p>
+                <h4>Sintaxis</h4>
+                <pre class="line-numbers"><code class="language-css">elemento::first-letter {
+    /* Definición de estilos */
+}</code></pre>
+                <h4>Ejemplo de uso</h4>
+                <pre class="line-numbers"><code class="language-css">p::first-letter {
+    color: red;
+    font-size: 2em;
+}</code></pre>
+                <p>
+                    La primera letra del elemento <span>p</span> aparece en rojo y con un tamaño de fuente mayor:
+                </p>
+                <p class="prueba_first_letter">Texto de prueba...</p>
+            </article>
+            <article>
+                <h3>::first-line</h3>
+                <p>
+                    El pseudo-elemento <span>::first-line</span> representa a la primera línea de un elemento.
+                </p>
+                <h4>Sintaxis</h4>
+                <pre class="line-numbers"><code class="language-css">elemento::first-line {
+    /* Definición de estilos */
+}</code></pre>
+                <h4>Ejemplo de uso</h4>
+                <pre class="line-numbers"><code class="language-css">p::first-line {
+    color: red;
+    font-size: 2em;
+}</code></pre>
+                <p>
+                    La primera línea del elemento <span>p</span> aparece en rojo:
+                </p>
+                <p class="prueba_first_line">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis veniam
+                    doloribus ut deleniti maiores? Tempore reprehenderit rem alias, laborum necessitatibus velit
+                    explicabo iure, repudiandae magnam optio fugit esse sint praesentium.</p>
+            </article>
+            <article>
+                <h3>::selection</h3>
+                <p>
+                    El pseudo-elemento <span>::selection</span> representa a la selección de texto de un elemento.
+                </p>
+                <h4>Sintaxis</h4>
+                <pre class="line-numbers"><code class="language-css">elemento::selection {
+    /* Definición de estilos */
+}</code></pre>
+                <h4>Ejemplo de uso</h4>
+                <pre class="line-numbers"><code class="language-css">p::selection {
+    background-color: red;
+    color: white;
+}</code></pre>
+                <p>
+                    El texto seleccionado aparece en rojo:
+                </p>
+                <p class="prueba_selection">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis veniam
+                    doloribus ut deleniti maiores? Tempore reprehenderit rem alias, laborum necessitatibus velit
+                    explicabo iure, repudiandae magnam optio fugit esse sint praesentium.</p>
             </article>
         </section>
     </main>
